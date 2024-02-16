@@ -14,12 +14,6 @@ namespace MyFirstARGame
             this.scores = new Dictionary<string, int>();
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-        
-        }
-
         public void SetScore(string playerName, int score)
         {
             // Check to see if player exists on scoreboard.

@@ -18805,14 +18805,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Scoreboard_Start_m947D49F93FC23E02032FC8
 		return;
 	}
 }
-// System.Void MyFirstARGame.Scoreboard::Update()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Scoreboard_Update_m2252660EDDA47016756103E8714D7F55758D5E15 (Scoreboard_t3D396F7BED04FEB0CD98E51D963B4FB835E7C475* __this, const RuntimeMethod* method) 
-{
-	{
-		// }
-		return;
-	}
-}
 // System.Void MyFirstARGame.Scoreboard::SetScore(System.String,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Scoreboard_SetScore_m412A746F63913BDC2DC057D87C0FAAC5B398BAC1 (Scoreboard_t3D396F7BED04FEB0CD98E51D963B4FB835E7C475* __this, String_t* ___playerName0, int32_t ___score1, const RuntimeMethod* method) 
 {
