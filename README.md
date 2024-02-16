@@ -1,2 +1,1 @@
-# Multiplayer-AR-Game
-CIS 5680 multiplayer AR game project. Theme to be decided. 
+This project is based on https://github.com/Unity-Technologies/arfoundation-samples#interaction
