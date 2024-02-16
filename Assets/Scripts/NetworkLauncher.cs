@@ -108,5 +108,10 @@ namespace MyFirstARGame
             Debug.Log("Left room");
             this.isJoinedToRoom = false;
         }
+
+        public override void OnPlayerEnteredRoom(Photon.Realtime.Player newPlayer)
+        {
+            this.NetworkCommunication.UpdateForNewPlayer(newPlayer);
+        }
     }
 }
