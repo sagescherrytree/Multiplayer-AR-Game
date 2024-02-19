@@ -11,7 +11,7 @@ namespace MyFirstARGame
     /// Spawns a plant obj at a certain random point in the screen. 
     /// </summary>
 
-    [RequireComponent(typeof(Camera))]
+    //[RequireComponent(typeof(Camera))]
     public class TreasureManager : PressInputBase
     {
         [SerializeField]
@@ -39,6 +39,7 @@ namespace MyFirstARGame
         {
             base.Awake();
             this.m_RaycastManager = this.GetComponent<ARRaycastManager>();
+            Spawn();
         }
 
         private void Spawn()
@@ -65,6 +66,7 @@ namespace MyFirstARGame
             }
         }
 
+        /*
         private void Update()
         {
             if (Pointer.current == null || !this.CanPlace)
@@ -91,7 +93,7 @@ namespace MyFirstARGame
                 var hitPose = TreasureManager.s_Hits[0].pose;
                 this.CreateOrUpdateObject(hitPose.position, hitPose.rotation);
             }
-        }
+        }*/
 
         // Creates object once raycast successful.
         // Call this for each raycast for each object to spawn.

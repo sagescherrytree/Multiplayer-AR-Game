@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: -7965609475775868951}
   - component: {fileID: -8394341379877964569}
   - component: {fileID: -4580267547642154115}
+  - component: {fileID: 5380277100265097294}
   m_Layer: 0
   m_Name: Plant
   m_TagString: Untagged
@@ -97,3 +98,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.7095435
   m_Center: {x: 0.060056806, y: -0.017188072, z: -0.10372907}
+--- !u!54 &5380277100265097294
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123881950708857618}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

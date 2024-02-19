@@ -19387,18 +19387,20 @@ struct TreasureManager_t628BFB1B47487881FFF9F2F226AF9DBB71EB0293  : public Press
 {
 	// UnityEngine.GameObject MyFirstARGame.TreasureManager::plantPrefab
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___plantPrefab_5;
+	// System.Single MyFirstARGame.TreasureManager::numPlants
+	float ___numPlants_6;
 	// UnityEngine.XR.ARFoundation.ARRaycastManager MyFirstARGame.TreasureManager::m_RaycastManager
-	ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* ___m_RaycastManager_6;
+	ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* ___m_RaycastManager_7;
 	// UnityEngine.GameObject MyFirstARGame.TreasureManager::<SpawnedObject>k__BackingField
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___U3CSpawnedObjectU3Ek__BackingField_8;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___U3CSpawnedObjectU3Ek__BackingField_9;
 	// System.Boolean MyFirstARGame.TreasureManager::<CanPlace>k__BackingField
-	bool ___U3CCanPlaceU3Ek__BackingField_9;
+	bool ___U3CCanPlaceU3Ek__BackingField_10;
 };
 
 struct TreasureManager_t628BFB1B47487881FFF9F2F226AF9DBB71EB0293_StaticFields
 {
 	// System.Collections.Generic.List`1<UnityEngine.XR.ARFoundation.ARRaycastHit> MyFirstARGame.TreasureManager::s_Hits
-	List_1_t0754071572EFE7A5C92A59495D2524FC935364E3* ___s_Hits_7;
+	List_1_t0754071572EFE7A5C92A59495D2524FC935364E3* ___s_Hits_8;
 };
 
 // UnityEngine.InputSystem.XR.XRControllerWithRumble

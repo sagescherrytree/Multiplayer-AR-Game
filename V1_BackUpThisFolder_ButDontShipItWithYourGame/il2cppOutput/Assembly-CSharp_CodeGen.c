@@ -613,8 +613,8 @@ extern void TreasureManager_get_CanPlace_mAAAB87B24D0A3B8027757F83F415481264F5F4
 extern void TreasureManager_set_CanPlace_m9BA467B6F8E8F1C9188663BA815D3D53E3D1822F (void);
 // 0x00000131 System.Void MyFirstARGame.TreasureManager::Awake()
 extern void TreasureManager_Awake_m97217FE64AC419530BCFCCDCA814A7E26F8ED3A1 (void);
-// 0x00000132 System.Void MyFirstARGame.TreasureManager::Update()
-extern void TreasureManager_Update_m5B997D94DF07573E4E512D1D12BCC6703A099CFB (void);
+// 0x00000132 System.Void MyFirstARGame.TreasureManager::Spawn()
+extern void TreasureManager_Spawn_m6A76E5432D8AFA4102A53935FDF2598AA23A589D (void);
 // 0x00000133 System.Void MyFirstARGame.TreasureManager::CreateOrUpdateObject(UnityEngine.Vector3,UnityEngine.Quaternion)
 extern void TreasureManager_CreateOrUpdateObject_mB6AE10D5D44738F3F8BF6F35605A59E719BAE6D7 (void);
 // 0x00000134 System.Void MyFirstARGame.TreasureManager::.ctor()
@@ -1122,7 +1122,7 @@ static Il2CppMethodPointer s_methodPointers[406] =
 	TreasureManager_get_CanPlace_mAAAB87B24D0A3B8027757F83F415481264F5F4CC,
 	TreasureManager_set_CanPlace_m9BA467B6F8E8F1C9188663BA815D3D53E3D1822F,
 	TreasureManager_Awake_m97217FE64AC419530BCFCCDCA814A7E26F8ED3A1,
-	TreasureManager_Update_m5B997D94DF07573E4E512D1D12BCC6703A099CFB,
+	TreasureManager_Spawn_m6A76E5432D8AFA4102A53935FDF2598AA23A589D,
 	TreasureManager_CreateOrUpdateObject_mB6AE10D5D44738F3F8BF6F35605A59E719BAE6D7,
 	TreasureManager__ctor_mA38CC6B763600B94B38C749DD5FFE1292E89B64F,
 	TreasureManager__cctor_mBA9667EAFF6A9DEB0BFAFEA1FBB496DFEBEB56A1,

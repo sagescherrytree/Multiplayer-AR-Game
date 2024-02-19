@@ -9599,18 +9599,20 @@ struct TreasureManager_t628BFB1B47487881FFF9F2F226AF9DBB71EB0293  : public Press
 {
 	// UnityEngine.GameObject MyFirstARGame.TreasureManager::plantPrefab
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___plantPrefab_5;
+	// System.Single MyFirstARGame.TreasureManager::numPlants
+	float ___numPlants_6;
 	// UnityEngine.XR.ARFoundation.ARRaycastManager MyFirstARGame.TreasureManager::m_RaycastManager
-	ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* ___m_RaycastManager_6;
+	ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* ___m_RaycastManager_7;
 	// UnityEngine.GameObject MyFirstARGame.TreasureManager::<SpawnedObject>k__BackingField
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___U3CSpawnedObjectU3Ek__BackingField_8;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___U3CSpawnedObjectU3Ek__BackingField_9;
 	// System.Boolean MyFirstARGame.TreasureManager::<CanPlace>k__BackingField
-	bool ___U3CCanPlaceU3Ek__BackingField_9;
+	bool ___U3CCanPlaceU3Ek__BackingField_10;
 };
 
 struct TreasureManager_t628BFB1B47487881FFF9F2F226AF9DBB71EB0293_StaticFields
 {
 	// System.Collections.Generic.List`1<UnityEngine.XR.ARFoundation.ARRaycastHit> MyFirstARGame.TreasureManager::s_Hits
-	List_1_t0754071572EFE7A5C92A59495D2524FC935364E3* ___s_Hits_7;
+	List_1_t0754071572EFE7A5C92A59495D2524FC935364E3* ___s_Hits_8;
 };
 
 // UnityEngine.InputSystem.XR.XRControllerWithRumble
@@ -10482,9 +10484,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6221[2] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6222[2] = 
 {
 	static_cast<int32_t>(offsetof(TrackedImageController_tC756B5491A6CED08C5F21ABD9BB03E90A604469E, ___Pressed_5)),static_cast<int32_t>(offsetof(TrackedImageController_tC756B5491A6CED08C5F21ABD9BB03E90A604469E, ___outlines_6)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6223[5] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6223[6] = 
 {
-	static_cast<int32_t>(offsetof(TreasureManager_t628BFB1B47487881FFF9F2F226AF9DBB71EB0293, ___plantPrefab_5)),static_cast<int32_t>(offsetof(TreasureManager_t628BFB1B47487881FFF9F2F226AF9DBB71EB0293, ___m_RaycastManager_6)),static_cast<int32_t>(offsetof(TreasureManager_t628BFB1B47487881FFF9F2F226AF9DBB71EB0293_StaticFields, ___s_Hits_7)),static_cast<int32_t>(offsetof(TreasureManager_t628BFB1B47487881FFF9F2F226AF9DBB71EB0293, ___U3CSpawnedObjectU3Ek__BackingField_8)),static_cast<int32_t>(offsetof(TreasureManager_t628BFB1B47487881FFF9F2F226AF9DBB71EB0293, ___U3CCanPlaceU3Ek__BackingField_9)),};
+	static_cast<int32_t>(offsetof(TreasureManager_t628BFB1B47487881FFF9F2F226AF9DBB71EB0293, ___plantPrefab_5)),static_cast<int32_t>(offsetof(TreasureManager_t628BFB1B47487881FFF9F2F226AF9DBB71EB0293, ___numPlants_6)),static_cast<int32_t>(offsetof(TreasureManager_t628BFB1B47487881FFF9F2F226AF9DBB71EB0293, ___m_RaycastManager_7)),static_cast<int32_t>(offsetof(TreasureManager_t628BFB1B47487881FFF9F2F226AF9DBB71EB0293_StaticFields, ___s_Hits_8)),static_cast<int32_t>(offsetof(TreasureManager_t628BFB1B47487881FFF9F2F226AF9DBB71EB0293, ___U3CSpawnedObjectU3Ek__BackingField_9)),static_cast<int32_t>(offsetof(TreasureManager_t628BFB1B47487881FFF9F2F226AF9DBB71EB0293, ___U3CCanPlaceU3Ek__BackingField_10)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6225[5] = 
 {
 	static_cast<int32_t>(offsetof(UIButtons_t8F5207F03567C9090FD73AA3196E7CDE5DF70CA2, ___canvas_4)),static_cast<int32_t>(offsetof(UIButtons_t8F5207F03567C9090FD73AA3196E7CDE5DF70CA2, ___togglePlacementButton_5)),static_cast<int32_t>(offsetof(UIButtons_t8F5207F03567C9090FD73AA3196E7CDE5DF70CA2, ___toggleManipulateButton_6)),static_cast<int32_t>(offsetof(UIButtons_t8F5207F03567C9090FD73AA3196E7CDE5DF70CA2, ___isPlacing_7)),static_cast<int32_t>(offsetof(UIButtons_t8F5207F03567C9090FD73AA3196E7CDE5DF70CA2, ___isManipulating_8)),};
