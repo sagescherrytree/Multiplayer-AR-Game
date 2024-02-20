@@ -13,7 +13,7 @@ namespace MyFirstARGame
         // Start is called before the first frame update
         void Start()
         {
-
+            PhotonNetwork.Instantiate("TreasureManager", Vector3.zero, Quaternion.identity);
         }
 
         // Update is called once per frame
