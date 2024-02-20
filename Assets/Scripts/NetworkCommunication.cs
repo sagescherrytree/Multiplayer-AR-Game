@@ -38,13 +38,7 @@ namespace MyFirstARGame
             var currentScore = this.scoreboard.GetScore(playerName);
             return currentScore;
         }
-
-        public void SetScoreText(string s)
-        {
-            this.photonView.RPC("Network_SetPlayerScoreText", RpcTarget.All, s);
-
-        }
-
+        
         // Pun system gibberish that I do not understand.
         [PunRPC]
         public void Network_SetPlayerScore(string playerName, int newScore)
@@ -53,12 +47,32 @@ namespace MyFirstARGame
             this.scoreboard.SetScore(playerName, newScore);
         }
 
-        [PunRPC]
-        public void Network_SetPlayerScoreText(string s)
+        public void DestroyPhotonView(int viewId)
         {
-            Debug.Log($"Debug text: {s}");
+            photonView.RPC("Network_DestroyPhotonView", RpcTarget.MasterClient, viewId);
+        }
+        
+        [PunRPC]
+        public void Network_DestroyPhotonView(int viewId)
+        {
+            var pv = PhotonView.Find(viewId);
+            if (pv != null)
+            {
+                PhotonNetwork.Destroy(pv);
+            }
         }
 
+        public void DebugMessage(string s)
+        {
+            photonView.RPC("Network_DebugMessage", RpcTarget.MasterClient, s);
+        }
+
+        [PunRPC]
+        private void Network_DebugMessage(string s)
+        {
+            Debug.Log($"Debug Message: {s}");
+        }
+        
         public void UpdateForNewPlayer(Photon.Realtime.Player player)
         {
             // Send current player scores to new player.

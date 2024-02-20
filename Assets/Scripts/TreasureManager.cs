@@ -33,21 +33,11 @@ namespace MyFirstARGame
 
         private void Start()
         {
-            Debug.Log("Start");
-            if (PhotonNetwork.IsConnected)
-            {
-                Debug.Log("We are connected");
-            }
             if (PhotonNetwork.IsMasterClient)
             {
-                Debug.Log("Master client");
                 StartCoroutine(Spawn());
                 StartCoroutine(SpawnPositiveBuff());
                 StartCoroutine(SpawnNegativeEffect());
-            }
-            else
-            {
-                Debug.Log("Not Master Client");
             }
         }
 
@@ -91,48 +81,5 @@ namespace MyFirstARGame
                 yield return new WaitForSeconds(spawnRate);
             }
         }
-
-        /*
-        private void Update()
-        {
-            if (Pointer.current == null || !this.CanPlace)
-                return;
-
-            var touchPosition = Pointer.current.position.ReadValue();
-
-            // Ensure we are not over any UI element.
-            var uiButtons = FindObjectOfType<UIButtons>();
-            if (uiButtons != null && (uiButtons.IsPointOverUI(touchPosition)))
-                return;
-
-            // Raycast against layer "GroundPlane" using normal Raycasting for our artifical ground plane.
-            // For AR Foundation planes (if enabled), we use AR Raycasting.
-            var ray = Camera.main.ScreenPointToRay(touchPosition);
-            if (Physics.Raycast(ray, out RaycastHit hit, 1000, LayerMask.GetMask("GroundPlane")))
-            {
-                this.CreateOrUpdateObject(hit.point, hit.transform.rotation);
-            }
-            else if (this.m_RaycastManager.Raycast(touchPosition, TreasureManager.s_Hits, TrackableType.PlaneWithinPolygon))
-            {
-                // Raycast hits are sorted by distance, so the first one
-                // will be the closest hit.
-                var hitPose = TreasureManager.s_Hits[0].pose;
-                this.CreateOrUpdateObject(hitPose.position, hitPose.rotation);
-            }
-        }*/
-
-        // Creates object once raycast successful.
-        // Call this for each raycast for each object to spawn.
-        /*private void CreateOrUpdateObject(Vector3 position, Quaternion rotation)
-        {
-            if (this.SpawnedObject == null)
-            {
-                this.SpawnedObject = PhotonNetwork.Instantiate(this.plantPrefab.name, position, rotation);
-            }
-            else
-            {
-                this.SpawnedObject.transform.position = position;
-            }
-        }*/
     }
 }

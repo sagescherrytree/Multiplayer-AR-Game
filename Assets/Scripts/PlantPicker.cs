@@ -35,39 +35,35 @@ namespace MyFirstARGame
 
         protected override void OnPressBegan(Vector3 position)
         {
-
             // Ensure we are not over any UI element.
             var uiButtons = FindObjectOfType<UIButtons>();
             if (uiButtons != null && (uiButtons.IsPointOverUI(position)))
             {
                 return;
             }
-            var networkCommunication = FindObjectOfType<NetworkCommunication>();
+            
             var ray = this.GetComponent<Camera>().ScreenPointToRay(position);
-            if (Physics.Raycast(ray, out hitData, 1000))
+            
+            if (!Physics.Raycast(ray, out hitData, 1000)) return;
+            
+            selectedObject = hitData.transform.gameObject;
+            var networkCommunication = FindObjectOfType<NetworkCommunication>();
+            
+            networkCommunication.DebugMessage($"Hit a {selectedObject.tag}");
+            if (!selectedObject.CompareTag("plant")) return;
+            
+            networkCommunication.DestroyPhotonView(selectedObject.GetComponent<PhotonView>().ViewID);
+            networkCommunication.IncrementScore();
+            
+            if (networkCommunication.GetCurrentScore() >= maxScore)
             {
-                Debug.Log("Cast ray.");
-                selectedObject = hitData.transform.gameObject;
-
-                if (selectedObject.tag == "plant")
-                {
-                    PhotonNetwork.Destroy(selectedObject);
-                    // Check if score is maxScore.
-                    int currPlayerScore = networkCommunication.GetCurrentScore();
-                    if (currPlayerScore >= maxScore)
-                    {
-                        // Go to game over scene.
-                        networkCommunication.SetScoreText("Game over.");
-                        SceneManager.LoadScene("Game_Over");
-                    }
-                    else
-                    {
-                        networkCommunication.IncrementScore();
-                        networkCommunication.SetScoreText("Destroyed plant.");
-                    }
-                }
+                // Go to game over scene.
+                SceneManager.LoadScene("Game_Over");
             }
-            //networkCommunication.SetScoreText($"o: {ray.origin} d: {ray.direction}, hit: {hitData.transform.gameObject.tag}");
+            else
+            {
+                networkCommunication.IncrementScore();
+            }
         }
     }
 }
