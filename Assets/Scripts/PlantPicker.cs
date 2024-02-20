@@ -16,7 +16,9 @@ namespace MyFirstARGame
 
     public class PlantPicker : PressInputBase
     {
-        //MonobehaviorPunCallbacks
+
+        [SerializeField]
+        public int maxScore = 10;
 
         private ARRaycastManager m_RaycastManager;
         private bool pressed;
@@ -50,7 +52,19 @@ namespace MyFirstARGame
                 if (selectedObject.tag == "plant")
                 {
                     PhotonNetwork.Destroy(selectedObject);
-                    networkCommunication.SetScoreText("Destroyed plant.");
+                    // Check if score is maxScore.
+                    int currPlayerScore = networkCommunication.GetCurrentScore();
+                    if (currPlayerScore >= maxScore)
+                    {
+                        // Go to game over scene.
+                        networkCommunication.SetScoreText("Game over.");
+                        SceneManager.LoadScene("Game_Over");
+                    }
+                    else
+                    {
+                        networkCommunication.IncrementScore();
+                        networkCommunication.SetScoreText("Destroyed plant.");
+                    }
                 }
             }
             //networkCommunication.SetScoreText($"o: {ray.origin} d: {ray.direction}, hit: {hitData.transform.gameObject.tag}");

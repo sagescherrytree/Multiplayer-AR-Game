@@ -31,6 +31,14 @@ namespace MyFirstARGame
             this.photonView.RPC("Network_SetPlayerScore", RpcTarget.All, playerName, currentScore + 1);
         }
 
+        public int GetCurrentScore()
+        {
+            // Gets score for current player.
+            var playerName = $"Player {PhotonNetwork.LocalPlayer.ActorNumber}";
+            var currentScore = this.scoreboard.GetScore(playerName);
+            return currentScore;
+        }
+
         public void SetScoreText(string s)
         {
             this.photonView.RPC("Network_SetPlayerScoreText", RpcTarget.All, s);
