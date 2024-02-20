@@ -81,7 +81,10 @@ namespace MyFirstARGame
             if (networkCommunication.GetCurrentScore() >= maxScore)
             {
                 // Go to game over scene.
-                SceneManager.LoadScene("Game_Over");
+                // Need to add logic to go to victory screen for the current player.
+                SceneManager.LoadScene("Victory");
+                // Else if other players interrupted.
+                //SceneManager.LoadScene("Game_Over");
             }
         }
     }

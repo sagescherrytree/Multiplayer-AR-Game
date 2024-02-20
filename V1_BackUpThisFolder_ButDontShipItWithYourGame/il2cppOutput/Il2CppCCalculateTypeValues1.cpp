@@ -18957,6 +18957,8 @@ struct NetworkCommunication_t809F5AB3055D06AB9969852C7A74931876FD5BBF  : public 
 {
 	// MyFirstARGame.Scoreboard MyFirstARGame.NetworkCommunication::scoreboard
 	Scoreboard_t3D396F7BED04FEB0CD98E51D963B4FB835E7C475* ___scoreboard_5;
+	// MyFirstARGame.TreasureManager MyFirstARGame.NetworkCommunication::treasureManager
+	TreasureManager_t628BFB1B47487881FFF9F2F226AF9DBB71EB0293* ___treasureManager_6;
 };
 
 // Photon.Pun.Demo.Cockpit.OfflineModeProperty

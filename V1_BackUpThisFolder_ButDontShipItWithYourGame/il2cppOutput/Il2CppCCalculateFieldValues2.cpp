@@ -9464,6 +9464,8 @@ struct NetworkCommunication_t809F5AB3055D06AB9969852C7A74931876FD5BBF  : public 
 {
 	// MyFirstARGame.Scoreboard MyFirstARGame.NetworkCommunication::scoreboard
 	Scoreboard_t3D396F7BED04FEB0CD98E51D963B4FB835E7C475* ___scoreboard_5;
+	// MyFirstARGame.TreasureManager MyFirstARGame.NetworkCommunication::treasureManager
+	TreasureManager_t628BFB1B47487881FFF9F2F226AF9DBB71EB0293* ___treasureManager_6;
 };
 
 // Photon.Pun.UtilityScripts.OnClickDestroy
@@ -10496,9 +10498,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6204[7] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6205[2] = 
 {
 	static_cast<int32_t>(offsetof(Tooltip_t84E76F9372B8B31FFFCAD1ACF0362438CAAF6967, ___m_Tooltip_4)),static_cast<int32_t>(offsetof(Tooltip_t84E76F9372B8B31FFFCAD1ACF0362438CAAF6967, ___m_EnteredButton_5)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6207[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6207[2] = 
 {
-	static_cast<int32_t>(offsetof(NetworkCommunication_t809F5AB3055D06AB9969852C7A74931876FD5BBF, ___scoreboard_5)),};
+	static_cast<int32_t>(offsetof(NetworkCommunication_t809F5AB3055D06AB9969852C7A74931876FD5BBF, ___scoreboard_5)),static_cast<int32_t>(offsetof(NetworkCommunication_t809F5AB3055D06AB9969852C7A74931876FD5BBF, ___treasureManager_6)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6210[4] = 
 {
 	static_cast<int32_t>(offsetof(NetworkLauncher_t72A2DF2B91C53FC3A4EDFB1275E1C7D521E43B0F_StaticFields, ___Singleton_5)),static_cast<int32_t>(offsetof(NetworkLauncher_t72A2DF2B91C53FC3A4EDFB1275E1C7D521E43B0F, ___JoinedRoom_6)),static_cast<int32_t>(offsetof(NetworkLauncher_t72A2DF2B91C53FC3A4EDFB1275E1C7D521E43B0F, ___isJoinedToRoom_7)),static_cast<int32_t>(offsetof(NetworkLauncher_t72A2DF2B91C53FC3A4EDFB1275E1C7D521E43B0F, ___U3CNetworkCommunicationU3Ek__BackingField_8)),};
