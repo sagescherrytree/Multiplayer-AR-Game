@@ -43,7 +43,7 @@
 
             // Update score.
             var networkCommunication = FindObjectOfType<NetworkCommunication>();
-            networkCommunication.IncrementScore();
+            networkCommunication.ChangeScore(1);
         }
     }
 }

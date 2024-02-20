@@ -50,19 +50,38 @@ namespace MyFirstARGame
             var networkCommunication = FindObjectOfType<NetworkCommunication>();
             
             networkCommunication.DebugMessage($"Hit a {selectedObject.tag}");
-            if (!selectedObject.CompareTag("plant")) return;
+
+            int points;
+            switch (selectedObject.tag)
+            {
+                case "plant":
+                {
+                    points = 1;
+                    break;
+                }
+                case "positive":
+                {
+                    points = 5;
+                    break;
+                }
+                case "negative":
+                {
+                    points = -5;
+                    break;
+                }
+                default:
+                {
+                    return;
+                }
+            }
             
             networkCommunication.DestroyPhotonView(selectedObject.GetComponent<PhotonView>().ViewID);
-            networkCommunication.IncrementScore();
+            networkCommunication.ChangeScore(points);
             
             if (networkCommunication.GetCurrentScore() >= maxScore)
             {
                 // Go to game over scene.
                 SceneManager.LoadScene("Game_Over");
-            }
-            else
-            {
-                networkCommunication.IncrementScore();
             }
         }
     }

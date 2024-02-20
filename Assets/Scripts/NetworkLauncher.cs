@@ -103,11 +103,6 @@ namespace MyFirstARGame
             this.JoinedRoom?.Invoke(this);
         }
 
-        public override void OnMasterClientSwitched(Photon.Realtime.Player newMasterClient)
-        {
-            Debug.Log("Took control of room");
-        }
-
         public override void OnLeftRoom()
         {
             Debug.Log("Left room");

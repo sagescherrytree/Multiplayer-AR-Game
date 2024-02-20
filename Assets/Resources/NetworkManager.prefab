@@ -32,7 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5055995115842406564
 MonoBehaviour:
@@ -47,6 +47,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreboard: {fileID: 3932034382665504109}
+  treasureManager: {fileID: 6844053442295058506, guid: 9c398a7463739f14dae8f3f5271320c3,
+    type: 3}
 --- !u!114 &3932034382665504109
 MonoBehaviour:
   m_ObjectHideFlags: 0

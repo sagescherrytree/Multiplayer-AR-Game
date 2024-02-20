@@ -10,10 +10,13 @@ namespace MyFirstARGame
     {
         [SerializeField]
         private Scoreboard scoreboard;
+
+        [SerializeField] private TreasureManager treasureManager;
+        
         // Start is called before the first frame update
         void Start()
         {
-            PhotonNetwork.Instantiate("TreasureManager", Vector3.zero, Quaternion.identity);
+            Instantiate(treasureManager);
         }
 
         // Update is called once per frame
@@ -23,12 +26,11 @@ namespace MyFirstARGame
         }
 
         // Increment score function.
-        public void IncrementScore()
+        public void ChangeScore(int delta)
         {
-            // Send to everyone, including self.
             var playerName = $"Player {PhotonNetwork.LocalPlayer.ActorNumber}";
-            var currentScore = this.scoreboard.GetScore(playerName);
-            this.photonView.RPC("Network_SetPlayerScore", RpcTarget.All, playerName, currentScore + 1);
+            var currentScore = scoreboard.GetScore(playerName);
+            this.photonView.RPC("Network_SetPlayerScore", RpcTarget.All, playerName, currentScore + delta);
         }
 
         public int GetCurrentScore()
