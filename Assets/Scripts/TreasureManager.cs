@@ -16,9 +16,18 @@ namespace MyFirstARGame
     {
         [SerializeField]
         public GameObject plantPrefab;
+        [SerializeField]
+        public GameObject positiveBuffPrefab;
+        [SerializeField]
+        public GameObject negativeEffectPrefab;
 
         [SerializeField]
         int numPlants;
+        [SerializeField]
+        int numPositiveBuffs;
+        [SerializeField]
+        int numNegativeEffects;
+
         [SerializeField]
         float spawnRate;
 
@@ -33,6 +42,8 @@ namespace MyFirstARGame
             {
                 Debug.Log("Master client");
                 StartCoroutine(Spawn());
+                StartCoroutine(SpawnPositiveBuff());
+                StartCoroutine(SpawnNegativeEffect());
             }
             else
             {
@@ -54,6 +65,31 @@ namespace MyFirstARGame
                 yield return new WaitForSeconds(spawnRate);
             }
 
+        }
+
+        public System.Collections.IEnumerator SpawnPositiveBuff()
+        {
+            while (true)
+            {
+                for (int i = 0; i < numPositiveBuffs; i++)
+                {
+                    Vector3 spawnPoint = new(Random.Range(-5f, 5f), 1, Random.Range(-5f, 5f));
+                    PhotonNetwork.Instantiate("PositivePowerUp", spawnPoint, Quaternion.identity, data: new object[] { });
+                }
+                yield return new WaitForSeconds(spawnRate);
+            }
+        }
+        public System.Collections.IEnumerator SpawnNegativeEffect()
+        {
+            while (true)
+            {
+                for (int i = 0; i < numNegativeEffects; i++)
+                {
+                    Vector3 spawnPoint = new(Random.Range(-5f, 5f), 1, Random.Range(-5f, 5f));
+                    PhotonNetwork.Instantiate("NegativePenalty", spawnPoint, Quaternion.identity, data: new object[] { });
+                }
+                yield return new WaitForSeconds(spawnRate);
+            }
         }
 
         /*

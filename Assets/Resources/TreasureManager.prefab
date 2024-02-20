@@ -47,8 +47,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plantPrefab: {fileID: 2123881950708857618, guid: 2cfcb1a29e7d4eb46bb3410201aedce8,
     type: 3}
+  positiveBuffPrefab: {fileID: 5474299653183594858, guid: 497d0091fca95d8418a905c1c3af785d,
+    type: 3}
+  negativeEffectPrefab: {fileID: 5474299653183594858, guid: b7d6b9a5bdcb97040b7d67a028d07ab6,
+    type: 3}
   numPlants: 10
-  spawnRate: 60
+  numPositiveBuffs: 1
+  numNegativeEffects: 1
+  spawnRate: 10
 --- !u!114 &-6040755477351660558
 MonoBehaviour:
   m_ObjectHideFlags: 0
