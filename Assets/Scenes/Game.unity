@@ -2279,7 +2279,7 @@ PrefabInstance:
     - target: {fileID: 3654025618764194785, guid: 9e00349ce8f9ea240aa4fe06bfd9a398,
         type: 3}
       propertyPath: showDebugPlanes
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3654025618764194785, guid: 9e00349ce8f9ea240aa4fe06bfd9a398,
         type: 3}
@@ -2289,7 +2289,7 @@ PrefabInstance:
     - target: {fileID: 3654025618764194785, guid: 9e00349ce8f9ea240aa4fe06bfd9a398,
         type: 3}
       propertyPath: enablePlaneDetection
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3811591508773167257, guid: 9e00349ce8f9ea240aa4fe06bfd9a398,
         type: 3}
