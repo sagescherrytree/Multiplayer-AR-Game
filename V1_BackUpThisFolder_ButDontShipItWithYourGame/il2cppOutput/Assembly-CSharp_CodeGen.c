@@ -401,421 +401,433 @@ extern void NetworkCommunication_Start_mD787EB50685A715B0C49FC7CCAD07E72C83E3762
 extern void NetworkCommunication_Update_m84519F4D5990B74BE34665857C35C0EF69B1DEC6 (void);
 // 0x000000C7 System.Void MyFirstARGame.NetworkCommunication::IncrementScore()
 extern void NetworkCommunication_IncrementScore_mD04B8ACA21622695B4E360F548272EEAAFDE03CC (void);
-// 0x000000C8 System.Void MyFirstARGame.NetworkCommunication::Network_SetPlayerScore(System.String,System.Int32)
+// 0x000000C8 System.Void MyFirstARGame.NetworkCommunication::SetScoreText(System.String)
+extern void NetworkCommunication_SetScoreText_m31ABDD5C42C161FBC242227D74FC9936CE57CB05 (void);
+// 0x000000C9 System.Void MyFirstARGame.NetworkCommunication::Network_SetPlayerScore(System.String,System.Int32)
 extern void NetworkCommunication_Network_SetPlayerScore_mD9E17B5A409826335D4FE404072AB53261ED09C0 (void);
-// 0x000000C9 System.Void MyFirstARGame.NetworkCommunication::UpdateForNewPlayer(Photon.Realtime.Player)
+// 0x000000CA System.Void MyFirstARGame.NetworkCommunication::Network_SetPlayerScoreText(System.String)
+extern void NetworkCommunication_Network_SetPlayerScoreText_m8CEECD94610419F854E8F1E3B70E3D92E3597EB2 (void);
+// 0x000000CB System.Void MyFirstARGame.NetworkCommunication::UpdateForNewPlayer(Photon.Realtime.Player)
 extern void NetworkCommunication_UpdateForNewPlayer_m4C9E9A42A1A442DE8CCFB9BE867C5B68B6C98ECC (void);
-// 0x000000CA System.Void MyFirstARGame.NetworkCommunication::.ctor()
+// 0x000000CC System.Void MyFirstARGame.NetworkCommunication::.ctor()
 extern void NetworkCommunication__ctor_mAA73495422F13281EC35B48B394C0276FC55B994 (void);
-// 0x000000CB System.Void MyFirstARGame.NetworkedInteractable::Start()
+// 0x000000CD System.Void MyFirstARGame.NetworkedInteractable::Start()
 extern void NetworkedInteractable_Start_m537856C8A522D8C7E66CA05E6586B21D2D0C9677 (void);
-// 0x000000CC System.Void MyFirstARGame.NetworkedInteractable::.ctor()
+// 0x000000CE System.Void MyFirstARGame.NetworkedInteractable::.ctor()
 extern void NetworkedInteractable__ctor_m1C45169F7CA0529B8110B312CDB744C3306957E6 (void);
-// 0x000000CD System.Void MyFirstARGame.NetworkLauncher::add_JoinedRoom(MyFirstARGame.NetworkLauncher/NetworkLauncherJoinedRoomEventHandler)
+// 0x000000CF System.Void MyFirstARGame.NetworkLauncher::add_JoinedRoom(MyFirstARGame.NetworkLauncher/NetworkLauncherJoinedRoomEventHandler)
 extern void NetworkLauncher_add_JoinedRoom_m9CFC5FAF30A4BA4AF371A1CE0F1DBA7DAD427DA0 (void);
-// 0x000000CE System.Void MyFirstARGame.NetworkLauncher::remove_JoinedRoom(MyFirstARGame.NetworkLauncher/NetworkLauncherJoinedRoomEventHandler)
+// 0x000000D0 System.Void MyFirstARGame.NetworkLauncher::remove_JoinedRoom(MyFirstARGame.NetworkLauncher/NetworkLauncherJoinedRoomEventHandler)
 extern void NetworkLauncher_remove_JoinedRoom_m6F58D9E456FBBCC34333A87B75B6F723A3C6FE7A (void);
-// 0x000000CF System.Boolean MyFirstARGame.NetworkLauncher::get_HasJoinedRoom()
+// 0x000000D1 System.Boolean MyFirstARGame.NetworkLauncher::get_HasJoinedRoom()
 extern void NetworkLauncher_get_HasJoinedRoom_m03794ACFD18D868469EA71FCA957469F4D4B4D52 (void);
-// 0x000000D0 MyFirstARGame.NetworkCommunication MyFirstARGame.NetworkLauncher::get_NetworkCommunication()
+// 0x000000D2 MyFirstARGame.NetworkCommunication MyFirstARGame.NetworkLauncher::get_NetworkCommunication()
 extern void NetworkLauncher_get_NetworkCommunication_m0219F8D0F75A035AB8ECBDE5182A75069B393661 (void);
-// 0x000000D1 System.Void MyFirstARGame.NetworkLauncher::set_NetworkCommunication(MyFirstARGame.NetworkCommunication)
+// 0x000000D3 System.Void MyFirstARGame.NetworkLauncher::set_NetworkCommunication(MyFirstARGame.NetworkCommunication)
 extern void NetworkLauncher_set_NetworkCommunication_m89948FF268ECD4132EBA5120533BC8F11D418141 (void);
-// 0x000000D2 System.Void MyFirstARGame.NetworkLauncher::Awake()
+// 0x000000D4 System.Void MyFirstARGame.NetworkLauncher::Awake()
 extern void NetworkLauncher_Awake_m37EC458A6B14D0C957E091FB8E8E8BCAC96F9964 (void);
-// 0x000000D3 System.Void MyFirstARGame.NetworkLauncher::InitSingleton()
+// 0x000000D5 System.Void MyFirstARGame.NetworkLauncher::InitSingleton()
 extern void NetworkLauncher_InitSingleton_mF8457E8C14E932308162A1D2625BF7621E684D3A (void);
-// 0x000000D4 System.Void MyFirstARGame.NetworkLauncher::Start()
+// 0x000000D6 System.Void MyFirstARGame.NetworkLauncher::Start()
 extern void NetworkLauncher_Start_m530FBAF53AC8BFC126D626F22F758ACD73B7D179 (void);
-// 0x000000D5 System.Void MyFirstARGame.NetworkLauncher::OnGUI()
+// 0x000000D7 System.Void MyFirstARGame.NetworkLauncher::OnGUI()
 extern void NetworkLauncher_OnGUI_m10084D920D56F84EC0841359AA23E57C0EBD5146 (void);
-// 0x000000D6 System.Void MyFirstARGame.NetworkLauncher::OnConnectedToMaster()
+// 0x000000D8 System.Void MyFirstARGame.NetworkLauncher::OnConnectedToMaster()
 extern void NetworkLauncher_OnConnectedToMaster_m146CEC25494F6EA6902EDF899F060880B0D0DD1A (void);
-// 0x000000D7 System.Void MyFirstARGame.NetworkLauncher::OnJoinedRoom()
+// 0x000000D9 System.Void MyFirstARGame.NetworkLauncher::OnJoinedRoom()
 extern void NetworkLauncher_OnJoinedRoom_m62787C1D9FF897C4539951F31469E4B1EBFCCA6D (void);
-// 0x000000D8 System.Void MyFirstARGame.NetworkLauncher::OnLeftRoom()
+// 0x000000DA System.Void MyFirstARGame.NetworkLauncher::OnMasterClientSwitched(Photon.Realtime.Player)
+extern void NetworkLauncher_OnMasterClientSwitched_m231F45F5C2135AE4A1910B57179EECECCC6C6D21 (void);
+// 0x000000DB System.Void MyFirstARGame.NetworkLauncher::OnLeftRoom()
 extern void NetworkLauncher_OnLeftRoom_m5D93C0A642BCD989D284FF5F7822FCF48BF3D734 (void);
-// 0x000000D9 System.Void MyFirstARGame.NetworkLauncher::OnPlayerEnteredRoom(Photon.Realtime.Player)
+// 0x000000DC System.Void MyFirstARGame.NetworkLauncher::OnPlayerEnteredRoom(Photon.Realtime.Player)
 extern void NetworkLauncher_OnPlayerEnteredRoom_m5C3E192D309C66BFE54FE1CEEF98AFD160CC4049 (void);
-// 0x000000DA System.Void MyFirstARGame.NetworkLauncher::.ctor()
+// 0x000000DD System.Void MyFirstARGame.NetworkLauncher::.ctor()
 extern void NetworkLauncher__ctor_m051E1D92B0DF61153908455F244500901240A299 (void);
-// 0x000000DB System.Void MyFirstARGame.NetworkLauncher/NetworkLauncherJoinedRoomEventHandler::.ctor(System.Object,System.IntPtr)
+// 0x000000DE System.Void MyFirstARGame.NetworkLauncher/NetworkLauncherJoinedRoomEventHandler::.ctor(System.Object,System.IntPtr)
 extern void NetworkLauncherJoinedRoomEventHandler__ctor_m27BBC3494D83723A68E9F1DB8836270BDCB2E16F (void);
-// 0x000000DC System.Void MyFirstARGame.NetworkLauncher/NetworkLauncherJoinedRoomEventHandler::Invoke(MyFirstARGame.NetworkLauncher)
+// 0x000000DF System.Void MyFirstARGame.NetworkLauncher/NetworkLauncherJoinedRoomEventHandler::Invoke(MyFirstARGame.NetworkLauncher)
 extern void NetworkLauncherJoinedRoomEventHandler_Invoke_m03A04FFCBED647725C98D4A142B9AE762A0F31C8 (void);
-// 0x000000DD System.IAsyncResult MyFirstARGame.NetworkLauncher/NetworkLauncherJoinedRoomEventHandler::BeginInvoke(MyFirstARGame.NetworkLauncher,System.AsyncCallback,System.Object)
+// 0x000000E0 System.IAsyncResult MyFirstARGame.NetworkLauncher/NetworkLauncherJoinedRoomEventHandler::BeginInvoke(MyFirstARGame.NetworkLauncher,System.AsyncCallback,System.Object)
 extern void NetworkLauncherJoinedRoomEventHandler_BeginInvoke_mD9B01953B82C395EC1965A5CF30DE624C9F44E1E (void);
-// 0x000000DE System.Void MyFirstARGame.NetworkLauncher/NetworkLauncherJoinedRoomEventHandler::EndInvoke(System.IAsyncResult)
+// 0x000000E1 System.Void MyFirstARGame.NetworkLauncher/NetworkLauncherJoinedRoomEventHandler::EndInvoke(System.IAsyncResult)
 extern void NetworkLauncherJoinedRoomEventHandler_EndInvoke_mC119328CC3472B2DDF8E77FD58C2F4F6081ED7FB (void);
-// 0x000000DF UnityEngine.GameObject MyFirstARGame.PlaceOnPlane::get_SpawnedObject()
+// 0x000000E2 UnityEngine.GameObject MyFirstARGame.PlaceOnPlane::get_SpawnedObject()
 extern void PlaceOnPlane_get_SpawnedObject_mA44B5070581703D2366003F1FA39FA02938EE7F8 (void);
-// 0x000000E0 System.Void MyFirstARGame.PlaceOnPlane::set_SpawnedObject(UnityEngine.GameObject)
+// 0x000000E3 System.Void MyFirstARGame.PlaceOnPlane::set_SpawnedObject(UnityEngine.GameObject)
 extern void PlaceOnPlane_set_SpawnedObject_mC7A3618C1C72126FEC558D84C5F42A3F0F2515A2 (void);
-// 0x000000E1 System.Boolean MyFirstARGame.PlaceOnPlane::get_CanPlace()
+// 0x000000E4 System.Boolean MyFirstARGame.PlaceOnPlane::get_CanPlace()
 extern void PlaceOnPlane_get_CanPlace_mC0747D939B78C534363BF0C00444FD5D23BDFE0B (void);
-// 0x000000E2 System.Void MyFirstARGame.PlaceOnPlane::set_CanPlace(System.Boolean)
+// 0x000000E5 System.Void MyFirstARGame.PlaceOnPlane::set_CanPlace(System.Boolean)
 extern void PlaceOnPlane_set_CanPlace_m7C452F71A4236FABEF8E135338DFA68D8BCE6790 (void);
-// 0x000000E3 System.Void MyFirstARGame.PlaceOnPlane::Awake()
+// 0x000000E6 System.Void MyFirstARGame.PlaceOnPlane::Awake()
 extern void PlaceOnPlane_Awake_mDA3BEEDD06132C13DD58FD474005E902B3BA7D22 (void);
-// 0x000000E4 System.Void MyFirstARGame.PlaceOnPlane::Update()
+// 0x000000E7 System.Void MyFirstARGame.PlaceOnPlane::Update()
 extern void PlaceOnPlane_Update_m90B58A286374CB7A84F5A281D633B3F0BDF89A96 (void);
-// 0x000000E5 System.Void MyFirstARGame.PlaceOnPlane::CreateOrUpdateObject(UnityEngine.Vector3,UnityEngine.Quaternion)
+// 0x000000E8 System.Void MyFirstARGame.PlaceOnPlane::CreateOrUpdateObject(UnityEngine.Vector3,UnityEngine.Quaternion)
 extern void PlaceOnPlane_CreateOrUpdateObject_mB979D88E44A51529DD3ED32DF3D7A00F7D9A4626 (void);
-// 0x000000E6 System.Void MyFirstARGame.PlaceOnPlane::OnPress(UnityEngine.Vector3)
+// 0x000000E9 System.Void MyFirstARGame.PlaceOnPlane::OnPress(UnityEngine.Vector3)
 extern void PlaceOnPlane_OnPress_mB0FE6AA85458EEB1E3B9CAD4F84A80D696BB0463 (void);
-// 0x000000E7 System.Void MyFirstARGame.PlaceOnPlane::OnPressCancel()
+// 0x000000EA System.Void MyFirstARGame.PlaceOnPlane::OnPressCancel()
 extern void PlaceOnPlane_OnPressCancel_mCA92221AC84442965C501179FDE9EE64E2CE0D25 (void);
-// 0x000000E8 System.Void MyFirstARGame.PlaceOnPlane::.ctor()
+// 0x000000EB System.Void MyFirstARGame.PlaceOnPlane::.ctor()
 extern void PlaceOnPlane__ctor_mD6B04F8AB96D9576B5CFE55CECE3EF8D2C329BC1 (void);
-// 0x000000E9 System.Void MyFirstARGame.PlaceOnPlane::.cctor()
+// 0x000000EC System.Void MyFirstARGame.PlaceOnPlane::.cctor()
 extern void PlaceOnPlane__cctor_mDCAED88407B954F194B3DECA022919336F94B0AD (void);
-// 0x000000EA System.Void MyFirstARGame.PressEventsProvider::add_PressBegan(MyFirstARGame.PressEventsProvider/PressEventHandler)
+// 0x000000ED System.Void MyFirstARGame.PlantPicker::Awake()
+extern void PlantPicker_Awake_mD79801A941B83A3506408934AB91E0D824923AB6 (void);
+// 0x000000EE System.Void MyFirstARGame.PlantPicker::OnPressBegan(UnityEngine.Vector3)
+extern void PlantPicker_OnPressBegan_m02971B1ACD5B55FB0EA7433C9F3D9B89FFDCA2EF (void);
+// 0x000000EF System.Void MyFirstARGame.PlantPicker::.ctor()
+extern void PlantPicker__ctor_m48061B9778AF67D12ECDEBFA33758F30FEE4F352 (void);
+// 0x000000F0 System.Void MyFirstARGame.PressEventsProvider::add_PressBegan(MyFirstARGame.PressEventsProvider/PressEventHandler)
 extern void PressEventsProvider_add_PressBegan_m9421C8727C2FB807E7AE39896E6297B244E9B05B (void);
-// 0x000000EB System.Void MyFirstARGame.PressEventsProvider::remove_PressBegan(MyFirstARGame.PressEventsProvider/PressEventHandler)
+// 0x000000F1 System.Void MyFirstARGame.PressEventsProvider::remove_PressBegan(MyFirstARGame.PressEventsProvider/PressEventHandler)
 extern void PressEventsProvider_remove_PressBegan_mCD5444D2EC61E4D9C830073718BBB18E809EE49E (void);
-// 0x000000EC System.Void MyFirstARGame.PressEventsProvider::add_Pressed(MyFirstARGame.PressEventsProvider/PressEventHandler)
+// 0x000000F2 System.Void MyFirstARGame.PressEventsProvider::add_Pressed(MyFirstARGame.PressEventsProvider/PressEventHandler)
 extern void PressEventsProvider_add_Pressed_mC3E6FD2D223B58A5A82CF7EF58844B899556CDD2 (void);
-// 0x000000ED System.Void MyFirstARGame.PressEventsProvider::remove_Pressed(MyFirstARGame.PressEventsProvider/PressEventHandler)
+// 0x000000F3 System.Void MyFirstARGame.PressEventsProvider::remove_Pressed(MyFirstARGame.PressEventsProvider/PressEventHandler)
 extern void PressEventsProvider_remove_Pressed_m9308FF5541047C39D547B6B2E2CD9E6D1A56B77E (void);
-// 0x000000EE System.Void MyFirstARGame.PressEventsProvider::add_PressCancelled(MyFirstARGame.PressEventsProvider/PressEventHandler)
+// 0x000000F4 System.Void MyFirstARGame.PressEventsProvider::add_PressCancelled(MyFirstARGame.PressEventsProvider/PressEventHandler)
 extern void PressEventsProvider_add_PressCancelled_m88667CD44CC292EC9E3233E9A08B15EE203DC8C5 (void);
-// 0x000000EF System.Void MyFirstARGame.PressEventsProvider::remove_PressCancelled(MyFirstARGame.PressEventsProvider/PressEventHandler)
+// 0x000000F5 System.Void MyFirstARGame.PressEventsProvider::remove_PressCancelled(MyFirstARGame.PressEventsProvider/PressEventHandler)
 extern void PressEventsProvider_remove_PressCancelled_m18E6E0DDA54A83CA0DCDA2F4CA179F31A1DA7739 (void);
-// 0x000000F0 System.Void MyFirstARGame.PressEventsProvider::OnPressBegan(UnityEngine.Vector3)
+// 0x000000F6 System.Void MyFirstARGame.PressEventsProvider::OnPressBegan(UnityEngine.Vector3)
 extern void PressEventsProvider_OnPressBegan_m930C855541B03EAF980BB846CA61ABF5DAF9C01B (void);
-// 0x000000F1 System.Void MyFirstARGame.PressEventsProvider::OnPress(UnityEngine.Vector3)
+// 0x000000F7 System.Void MyFirstARGame.PressEventsProvider::OnPress(UnityEngine.Vector3)
 extern void PressEventsProvider_OnPress_m304555BE2F8A28AD8E20D14464F8DFE33B7D263B (void);
-// 0x000000F2 System.Void MyFirstARGame.PressEventsProvider::OnPressCancel()
+// 0x000000F8 System.Void MyFirstARGame.PressEventsProvider::OnPressCancel()
 extern void PressEventsProvider_OnPressCancel_mCE1985BDB8B28693580781C3625FCBD7DC3CEDF1 (void);
-// 0x000000F3 System.Void MyFirstARGame.PressEventsProvider::.ctor()
+// 0x000000F9 System.Void MyFirstARGame.PressEventsProvider::.ctor()
 extern void PressEventsProvider__ctor_m570164E2FDBBBAF85E3C7F77FC9FA3FF809F86EA (void);
-// 0x000000F4 System.Void MyFirstARGame.PressEventsProvider/PressEventHandler::.ctor(System.Object,System.IntPtr)
+// 0x000000FA System.Void MyFirstARGame.PressEventsProvider/PressEventHandler::.ctor(System.Object,System.IntPtr)
 extern void PressEventHandler__ctor_m1EF0C49978E91F733A53984F7DFD147536154E66 (void);
-// 0x000000F5 System.Void MyFirstARGame.PressEventsProvider/PressEventHandler::Invoke(UnityEngine.Vector3)
+// 0x000000FB System.Void MyFirstARGame.PressEventsProvider/PressEventHandler::Invoke(UnityEngine.Vector3)
 extern void PressEventHandler_Invoke_m3E79CC0007BE6706363CDAD200848CA699F4CEB1 (void);
-// 0x000000F6 System.IAsyncResult MyFirstARGame.PressEventsProvider/PressEventHandler::BeginInvoke(UnityEngine.Vector3,System.AsyncCallback,System.Object)
+// 0x000000FC System.IAsyncResult MyFirstARGame.PressEventsProvider/PressEventHandler::BeginInvoke(UnityEngine.Vector3,System.AsyncCallback,System.Object)
 extern void PressEventHandler_BeginInvoke_m9FC3B764B9786C88A690BB0754DAFF6925C4B1CF (void);
-// 0x000000F7 System.Void MyFirstARGame.PressEventsProvider/PressEventHandler::EndInvoke(System.IAsyncResult)
+// 0x000000FD System.Void MyFirstARGame.PressEventsProvider/PressEventHandler::EndInvoke(System.IAsyncResult)
 extern void PressEventHandler_EndInvoke_m75B33E7D35F25939E1D76ACE81A90A1934D6AE34 (void);
-// 0x000000F8 System.Void MyFirstARGame.PressInputBase::Awake()
+// 0x000000FE System.Void MyFirstARGame.PressInputBase::Awake()
 extern void PressInputBase_Awake_mC09E27EF8AEF00BC2022D00450174BAE5905C577 (void);
-// 0x000000F9 System.Void MyFirstARGame.PressInputBase::OnEnable()
+// 0x000000FF System.Void MyFirstARGame.PressInputBase::OnEnable()
 extern void PressInputBase_OnEnable_m84A662CF17E29ED6896D2B06DBCE4793F46259B9 (void);
-// 0x000000FA System.Void MyFirstARGame.PressInputBase::OnDisable()
+// 0x00000100 System.Void MyFirstARGame.PressInputBase::OnDisable()
 extern void PressInputBase_OnDisable_m300CDC18E261B6C712539E6645157446EE97C627 (void);
-// 0x000000FB System.Void MyFirstARGame.PressInputBase::OnDestroy()
+// 0x00000101 System.Void MyFirstARGame.PressInputBase::OnDestroy()
 extern void PressInputBase_OnDestroy_mFB771539DBC0327498B7BAA4C0C802D5CBED3B9F (void);
-// 0x000000FC System.Void MyFirstARGame.PressInputBase::OnPress(UnityEngine.Vector3)
+// 0x00000102 System.Void MyFirstARGame.PressInputBase::OnPress(UnityEngine.Vector3)
 extern void PressInputBase_OnPress_m47D4E386F613A6F265DF20A716C7562E2D3A9A7C (void);
-// 0x000000FD System.Void MyFirstARGame.PressInputBase::OnPressBegan(UnityEngine.Vector3)
+// 0x00000103 System.Void MyFirstARGame.PressInputBase::OnPressBegan(UnityEngine.Vector3)
 extern void PressInputBase_OnPressBegan_m909370BD4EF2D4A579CCC3CD99E002F0A8FDF06F (void);
-// 0x000000FE System.Void MyFirstARGame.PressInputBase::OnPressCancel()
+// 0x00000104 System.Void MyFirstARGame.PressInputBase::OnPressCancel()
 extern void PressInputBase_OnPressCancel_m5B16C0424E06684BAF8C1BC58C6B6255A1252DEC (void);
-// 0x000000FF System.Void MyFirstARGame.PressInputBase::.ctor()
+// 0x00000105 System.Void MyFirstARGame.PressInputBase::.ctor()
 extern void PressInputBase__ctor_m5AEF3EBA190154E711D2701C912AF309EA9E3028 (void);
-// 0x00000100 System.Void MyFirstARGame.PressInputBase::<Awake>b__1_0(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x00000106 System.Void MyFirstARGame.PressInputBase::<Awake>b__1_0(UnityEngine.InputSystem.InputAction/CallbackContext)
 extern void PressInputBase_U3CAwakeU3Eb__1_0_mE3BDF6252E53E76C28EB670AF69FE3AD9DCE579B (void);
-// 0x00000101 System.Void MyFirstARGame.PressInputBase::<Awake>b__1_1(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x00000107 System.Void MyFirstARGame.PressInputBase::<Awake>b__1_1(UnityEngine.InputSystem.InputAction/CallbackContext)
 extern void PressInputBase_U3CAwakeU3Eb__1_1_m2E87A3D223B8F3CF23E3D8DBD83AD65299EA1D9B (void);
-// 0x00000102 System.Void MyFirstARGame.PressInputBase::<Awake>b__1_2(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x00000108 System.Void MyFirstARGame.PressInputBase::<Awake>b__1_2(UnityEngine.InputSystem.InputAction/CallbackContext)
 extern void PressInputBase_U3CAwakeU3Eb__1_2_m8D040D8FD03C4977587D4957EF0B77B5F59CE1F4 (void);
-// 0x00000103 System.Void MyFirstARGame.ProjectileBehaviour::Awake()
+// 0x00000109 System.Void MyFirstARGame.ProjectileBehaviour::Awake()
 extern void ProjectileBehaviour_Awake_m7C2543E93C8DF4BDAD0FEC1346DDB102C1782B4A (void);
-// 0x00000104 System.Void MyFirstARGame.ProjectileBehaviour::.ctor()
+// 0x0000010A System.Void MyFirstARGame.ProjectileBehaviour::.ctor()
 extern void ProjectileBehaviour__ctor_mF6F544ECF41DB2FE5D1548D2513F7099490A034A (void);
-// 0x00000105 System.Void MyFirstARGame.ProjectileLauncher::OnPressBegan(UnityEngine.Vector3)
+// 0x0000010B System.Void MyFirstARGame.ProjectileLauncher::OnPressBegan(UnityEngine.Vector3)
 extern void ProjectileLauncher_OnPressBegan_m80B994F2D2DF6247F80A955918DE7A373D8AE408 (void);
-// 0x00000106 System.Void MyFirstARGame.ProjectileLauncher::.ctor()
+// 0x0000010C System.Void MyFirstARGame.ProjectileLauncher::.ctor()
 extern void ProjectileLauncher__ctor_m7D12DED918A4B50F1F7455F1C28C748B996DF1C7 (void);
-// 0x00000107 System.Void MyFirstARGame.Scoreboard::Start()
+// 0x0000010D System.Void MyFirstARGame.Scoreboard::Start()
 extern void Scoreboard_Start_m947D49F93FC23E02032FC8EB6DF01A01331DE1B0 (void);
-// 0x00000108 System.Void MyFirstARGame.Scoreboard::SetScore(System.String,System.Int32)
+// 0x0000010E System.Void MyFirstARGame.Scoreboard::SetScore(System.String,System.Int32)
 extern void Scoreboard_SetScore_m412A746F63913BDC2DC057D87C0FAAC5B398BAC1 (void);
-// 0x00000109 System.Int32 MyFirstARGame.Scoreboard::GetScore(System.String)
+// 0x0000010F System.Int32 MyFirstARGame.Scoreboard::GetScore(System.String)
 extern void Scoreboard_GetScore_mE5807BEFF39EE4DFB6E3CF7C911971AEF3B8F739 (void);
-// 0x0000010A System.Void MyFirstARGame.Scoreboard::OnGUI()
+// 0x00000110 System.Void MyFirstARGame.Scoreboard::OnGUI()
 extern void Scoreboard_OnGUI_m21C375C799200CEDA5F626F2CF7FE68391A3BED8 (void);
-// 0x0000010B System.Void MyFirstARGame.Scoreboard::.ctor()
+// 0x00000111 System.Void MyFirstARGame.Scoreboard::.ctor()
 extern void Scoreboard__ctor_mD6CBB44F21061D3C680EED3C5DBB304D0695BBF6 (void);
-// 0x0000010C System.Void MyFirstARGame.SessionSettings::Start()
+// 0x00000112 System.Void MyFirstARGame.SessionSettings::Start()
 extern void SessionSettings_Start_m539B81C2B42C2D9FBA0F5BB7843A354EE72793B2 (void);
-// 0x0000010D System.Void MyFirstARGame.SessionSettings::Update()
+// 0x00000113 System.Void MyFirstARGame.SessionSettings::Update()
 extern void SessionSettings_Update_m0E16A326CB7F99E93AC1667468A5D98532DB74BF (void);
-// 0x0000010E System.Void MyFirstARGame.SessionSettings::ApplyChanges()
+// 0x00000114 System.Void MyFirstARGame.SessionSettings::ApplyChanges()
 extern void SessionSettings_ApplyChanges_mB79E4DF86DAE706631208EBF449062879D4EB799 (void);
-// 0x0000010F System.Void MyFirstARGame.SessionSettings::OnValidate()
+// 0x00000115 System.Void MyFirstARGame.SessionSettings::OnValidate()
 extern void SessionSettings_OnValidate_m28697CAAC1828876C38AF7B7FAC676831F64C0C1 (void);
-// 0x00000110 System.Void MyFirstARGame.SessionSettings::.ctor()
+// 0x00000116 System.Void MyFirstARGame.SessionSettings::.ctor()
 extern void SessionSettings__ctor_mFD35E87B6D40B7452B6DAB712D58E7205A1E3065 (void);
-// 0x00000111 System.Void MyFirstARGame.SharedSpaceManager::Awake()
+// 0x00000117 System.Void MyFirstARGame.SharedSpaceManager::Awake()
 extern void SharedSpaceManager_Awake_m63E9A73A7E8664C356E1C34E9381854C7D05B83B (void);
-// 0x00000112 System.Void MyFirstARGame.SharedSpaceManager::Start()
+// 0x00000118 System.Void MyFirstARGame.SharedSpaceManager::Start()
 extern void SharedSpaceManager_Start_m3B9213371C23767F3E8C22127585229453BB7BAD (void);
-// 0x00000113 System.Void MyFirstARGame.SharedSpaceManager::OnEnable()
+// 0x00000119 System.Void MyFirstARGame.SharedSpaceManager::OnEnable()
 extern void SharedSpaceManager_OnEnable_m8921484356319AF9CF9B09E59CA29067DFF88096 (void);
-// 0x00000114 System.Void MyFirstARGame.SharedSpaceManager::OnDisable()
+// 0x0000011A System.Void MyFirstARGame.SharedSpaceManager::OnDisable()
 extern void SharedSpaceManager_OnDisable_m6E1F121D938A036A94BBA3073503FF52893817BE (void);
-// 0x00000115 System.Void MyFirstARGame.SharedSpaceManager::NetworkLauncher_JoinedRoom(MyFirstARGame.NetworkLauncher)
+// 0x0000011B System.Void MyFirstARGame.SharedSpaceManager::NetworkLauncher_JoinedRoom(MyFirstARGame.NetworkLauncher)
 extern void SharedSpaceManager_NetworkLauncher_JoinedRoom_mCBD3686BA6CB6E0BC87528F639A29C2222B6424C (void);
-// 0x00000116 System.Void MyFirstARGame.SharedSpaceManager::ArTrackedImageManager_trackedImagesChanged(UnityEngine.XR.ARFoundation.ARTrackedImagesChangedEventArgs)
+// 0x0000011C System.Void MyFirstARGame.SharedSpaceManager::ArTrackedImageManager_trackedImagesChanged(UnityEngine.XR.ARFoundation.ARTrackedImagesChangedEventArgs)
 extern void SharedSpaceManager_ArTrackedImageManager_trackedImagesChanged_mC8FCB50F653A28F0F23612B3D1B2E6F31ED48DB3 (void);
-// 0x00000117 System.Void MyFirstARGame.SharedSpaceManager::TrackedImageController_Pressed(MyFirstARGame.TrackedImageController,UnityEngine.Vector3)
+// 0x0000011D System.Void MyFirstARGame.SharedSpaceManager::TrackedImageController_Pressed(MyFirstARGame.TrackedImageController,UnityEngine.Vector3)
 extern void SharedSpaceManager_TrackedImageController_Pressed_m365107850EDC69FC725FA98166AB645F7DCE55F7 (void);
-// 0x00000118 System.Void MyFirstARGame.SharedSpaceManager::MatchReferenceCoordinateSystem(UnityEngine.GameObject)
+// 0x0000011E System.Void MyFirstARGame.SharedSpaceManager::MatchReferenceCoordinateSystem(UnityEngine.GameObject)
 extern void SharedSpaceManager_MatchReferenceCoordinateSystem_m137C8FD11FD07A06583B92793D7B054482847C40 (void);
-// 0x00000119 System.Void MyFirstARGame.SharedSpaceManager::ShowOutline(System.Boolean,System.Boolean)
+// 0x0000011F System.Void MyFirstARGame.SharedSpaceManager::ShowOutline(System.Boolean,System.Boolean)
 extern void SharedSpaceManager_ShowOutline_mE1553AC61C2B284C0597F900AD185B23F01EAC59 (void);
-// 0x0000011A System.Void MyFirstARGame.SharedSpaceManager::Update()
+// 0x00000120 System.Void MyFirstARGame.SharedSpaceManager::Update()
 extern void SharedSpaceManager_Update_m66050EE8F188C148A2B3F5E13F49BBA37165F66F (void);
-// 0x0000011B System.Void MyFirstARGame.SharedSpaceManager::OnGUI()
+// 0x00000121 System.Void MyFirstARGame.SharedSpaceManager::OnGUI()
 extern void SharedSpaceManager_OnGUI_m66BF39B6E9EF1414FA49243A6351C684FC2136C7 (void);
-// 0x0000011C System.Void MyFirstARGame.SharedSpaceManager::.ctor()
+// 0x00000122 System.Void MyFirstARGame.SharedSpaceManager::.ctor()
 extern void SharedSpaceManager__ctor_m91DA09C2E8F7DA86EE356BCF1660F72B9CF3EB38 (void);
-// 0x0000011D System.Void MyFirstARGame.TrackedImageController::add_Pressed(MyFirstARGame.TrackedImageController/TrackedImageInteractionEventHandler)
+// 0x00000123 System.Void MyFirstARGame.TrackedImageController::add_Pressed(MyFirstARGame.TrackedImageController/TrackedImageInteractionEventHandler)
 extern void TrackedImageController_add_Pressed_m912576CC07A0A88AD5F2D8377AF4BF1F9419942F (void);
-// 0x0000011E System.Void MyFirstARGame.TrackedImageController::remove_Pressed(MyFirstARGame.TrackedImageController/TrackedImageInteractionEventHandler)
+// 0x00000124 System.Void MyFirstARGame.TrackedImageController::remove_Pressed(MyFirstARGame.TrackedImageController/TrackedImageInteractionEventHandler)
 extern void TrackedImageController_remove_Pressed_m0EE639501C455E64FC535F728161C7911A1B008F (void);
-// 0x0000011F System.Void MyFirstARGame.TrackedImageController::Awake()
+// 0x00000125 System.Void MyFirstARGame.TrackedImageController::Awake()
 extern void TrackedImageController_Awake_mE23CB24D2D9610AF87E960C91D54D5F3FB83238B (void);
-// 0x00000120 System.Boolean MyFirstARGame.TrackedImageController::get_ShowOutline()
+// 0x00000126 System.Boolean MyFirstARGame.TrackedImageController::get_ShowOutline()
 extern void TrackedImageController_get_ShowOutline_m9C2A3E16A95957AB78A0CE10DE7F2BD0F6C9B0C7 (void);
-// 0x00000121 System.Void MyFirstARGame.TrackedImageController::set_ShowOutline(System.Boolean)
+// 0x00000127 System.Void MyFirstARGame.TrackedImageController::set_ShowOutline(System.Boolean)
 extern void TrackedImageController_set_ShowOutline_m33C9726B0C4190B92A42FECD3EF7176EF3CB46F1 (void);
-// 0x00000122 System.Void MyFirstARGame.TrackedImageController::set_OutlineMaterial(UnityEngine.Material)
+// 0x00000128 System.Void MyFirstARGame.TrackedImageController::set_OutlineMaterial(UnityEngine.Material)
 extern void TrackedImageController_set_OutlineMaterial_m5ACF9D7CB09D2A993FE2C3DD41871AC04D9B5B56 (void);
-// 0x00000123 System.Void MyFirstARGame.TrackedImageController::TrackedImageController_Pressed(UnityEngine.Vector3)
+// 0x00000129 System.Void MyFirstARGame.TrackedImageController::TrackedImageController_Pressed(UnityEngine.Vector3)
 extern void TrackedImageController_TrackedImageController_Pressed_m23E3346A70145DD1C4697DB20E1D7257DA4B2123 (void);
-// 0x00000124 System.Void MyFirstARGame.TrackedImageController::UpdateScale(UnityEngine.Vector3)
+// 0x0000012A System.Void MyFirstARGame.TrackedImageController::UpdateScale(UnityEngine.Vector3)
 extern void TrackedImageController_UpdateScale_m5DD602E648D051BD13868F41C57789A39F4F1B92 (void);
-// 0x00000125 System.Void MyFirstARGame.TrackedImageController::.ctor()
+// 0x0000012B System.Void MyFirstARGame.TrackedImageController::.ctor()
 extern void TrackedImageController__ctor_mE0E7982B636FCB0CBF6FFAFB3AE817079AF9C17E (void);
-// 0x00000126 System.Void MyFirstARGame.TrackedImageController/TrackedImageInteractionEventHandler::.ctor(System.Object,System.IntPtr)
+// 0x0000012C System.Void MyFirstARGame.TrackedImageController/TrackedImageInteractionEventHandler::.ctor(System.Object,System.IntPtr)
 extern void TrackedImageInteractionEventHandler__ctor_mBC094728098C9A29DB500C0714A1B8A21449E8F4 (void);
-// 0x00000127 System.Void MyFirstARGame.TrackedImageController/TrackedImageInteractionEventHandler::Invoke(MyFirstARGame.TrackedImageController,UnityEngine.Vector3)
+// 0x0000012D System.Void MyFirstARGame.TrackedImageController/TrackedImageInteractionEventHandler::Invoke(MyFirstARGame.TrackedImageController,UnityEngine.Vector3)
 extern void TrackedImageInteractionEventHandler_Invoke_m3DD59EAB6F5B45017880A508C653E8E2EDFFA8AE (void);
-// 0x00000128 System.IAsyncResult MyFirstARGame.TrackedImageController/TrackedImageInteractionEventHandler::BeginInvoke(MyFirstARGame.TrackedImageController,UnityEngine.Vector3,System.AsyncCallback,System.Object)
+// 0x0000012E System.IAsyncResult MyFirstARGame.TrackedImageController/TrackedImageInteractionEventHandler::BeginInvoke(MyFirstARGame.TrackedImageController,UnityEngine.Vector3,System.AsyncCallback,System.Object)
 extern void TrackedImageInteractionEventHandler_BeginInvoke_m39EDEFB3B694BF77A78FDFB2E734A207C8B0ACB6 (void);
-// 0x00000129 System.Void MyFirstARGame.TrackedImageController/TrackedImageInteractionEventHandler::EndInvoke(System.IAsyncResult)
+// 0x0000012F System.Void MyFirstARGame.TrackedImageController/TrackedImageInteractionEventHandler::EndInvoke(System.IAsyncResult)
 extern void TrackedImageInteractionEventHandler_EndInvoke_mB087BA04B13029C7A3FB0F52DCD3E42D7809512F (void);
-// 0x0000012A System.Void MyFirstARGame.TrackedImageController/<>c::.cctor()
+// 0x00000130 System.Void MyFirstARGame.TrackedImageController/<>c::.cctor()
 extern void U3CU3Ec__cctor_mD7027006423799369542DC127CFF6A9A1D55CC01 (void);
-// 0x0000012B System.Void MyFirstARGame.TrackedImageController/<>c::.ctor()
+// 0x00000131 System.Void MyFirstARGame.TrackedImageController/<>c::.ctor()
 extern void U3CU3Ec__ctor_m385C743D8E2C071F546803200D71215FE6A5554C (void);
-// 0x0000012C System.Boolean MyFirstARGame.TrackedImageController/<>c::<get_ShowOutline>b__7_0(UnityEngine.GameObject)
+// 0x00000132 System.Boolean MyFirstARGame.TrackedImageController/<>c::<get_ShowOutline>b__7_0(UnityEngine.GameObject)
 extern void U3CU3Ec_U3Cget_ShowOutlineU3Eb__7_0_mA7FC5C211F873A45D79AADF5C0EA843A889D47D5 (void);
-// 0x0000012D UnityEngine.GameObject MyFirstARGame.TreasureManager::get_SpawnedObject()
-extern void TreasureManager_get_SpawnedObject_m331844FAAB6C541C9764DB2AC4E1EA5BC486644D (void);
-// 0x0000012E System.Void MyFirstARGame.TreasureManager::set_SpawnedObject(UnityEngine.GameObject)
-extern void TreasureManager_set_SpawnedObject_mF89DE5811F518A523BF3C31FBFECB4E98C46E818 (void);
-// 0x0000012F System.Boolean MyFirstARGame.TreasureManager::get_CanPlace()
-extern void TreasureManager_get_CanPlace_mAAAB87B24D0A3B8027757F83F415481264F5F4CC (void);
-// 0x00000130 System.Void MyFirstARGame.TreasureManager::set_CanPlace(System.Boolean)
-extern void TreasureManager_set_CanPlace_m9BA467B6F8E8F1C9188663BA815D3D53E3D1822F (void);
-// 0x00000131 System.Void MyFirstARGame.TreasureManager::Awake()
-extern void TreasureManager_Awake_m97217FE64AC419530BCFCCDCA814A7E26F8ED3A1 (void);
-// 0x00000132 System.Void MyFirstARGame.TreasureManager::Spawn()
-extern void TreasureManager_Spawn_m6A76E5432D8AFA4102A53935FDF2598AA23A589D (void);
-// 0x00000133 System.Void MyFirstARGame.TreasureManager::CreateOrUpdateObject(UnityEngine.Vector3,UnityEngine.Quaternion)
-extern void TreasureManager_CreateOrUpdateObject_mB6AE10D5D44738F3F8BF6F35605A59E719BAE6D7 (void);
-// 0x00000134 System.Void MyFirstARGame.TreasureManager::.ctor()
+// 0x00000133 System.Void MyFirstARGame.TreasureManager::Start()
+extern void TreasureManager_Start_m2A9E153153609BD3B837BFE49617948C8FF38612 (void);
+// 0x00000134 System.Collections.IEnumerator MyFirstARGame.TreasureManager::Spawn()
+extern void TreasureManager_Spawn_m8EA5BA7E67750D5A2CE721B48FC1FCA131D3200D (void);
+// 0x00000135 System.Void MyFirstARGame.TreasureManager::.ctor()
 extern void TreasureManager__ctor_mA38CC6B763600B94B38C749DD5FFE1292E89B64F (void);
-// 0x00000135 System.Void MyFirstARGame.TreasureManager::.cctor()
-extern void TreasureManager__cctor_mBA9667EAFF6A9DEB0BFAFEA1FBB496DFEBEB56A1 (void);
-// 0x00000136 System.Void MyFirstARGame.ExitButton::ExitGame()
+// 0x00000136 System.Void MyFirstARGame.TreasureManager/<Spawn>d__4::.ctor(System.Int32)
+extern void U3CSpawnU3Ed__4__ctor_m0934C2E7464195836C82824B9E1A206CC7EAF935 (void);
+// 0x00000137 System.Void MyFirstARGame.TreasureManager/<Spawn>d__4::System.IDisposable.Dispose()
+extern void U3CSpawnU3Ed__4_System_IDisposable_Dispose_m2EC75F277185BA50ED6541A5831A0A8461DF7A5D (void);
+// 0x00000138 System.Boolean MyFirstARGame.TreasureManager/<Spawn>d__4::MoveNext()
+extern void U3CSpawnU3Ed__4_MoveNext_m40556D8DC04809359DE0F408AB14C3B7E5F38A1B (void);
+// 0x00000139 System.Object MyFirstARGame.TreasureManager/<Spawn>d__4::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CSpawnU3Ed__4_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m6FE4B197122B0483E4B49A24A9FE2E44DE608A9D (void);
+// 0x0000013A System.Void MyFirstARGame.TreasureManager/<Spawn>d__4::System.Collections.IEnumerator.Reset()
+extern void U3CSpawnU3Ed__4_System_Collections_IEnumerator_Reset_mE3077CEB0325156739769429EE37AB7828B79AF7 (void);
+// 0x0000013B System.Object MyFirstARGame.TreasureManager/<Spawn>d__4::System.Collections.IEnumerator.get_Current()
+extern void U3CSpawnU3Ed__4_System_Collections_IEnumerator_get_Current_m8DBE909E42A5437B5AEE24A5FED03B5DE55E8441 (void);
+// 0x0000013C System.Void MyFirstARGame.ExitButton::ExitGame()
 extern void ExitButton_ExitGame_mADFC8CC899A0A1A85649E75456CC7C0EF9F94B90 (void);
-// 0x00000137 System.Void MyFirstARGame.ExitButton::.ctor()
+// 0x0000013D System.Void MyFirstARGame.ExitButton::.ctor()
 extern void ExitButton__ctor_m0687743C47FDB017959781F23A14058FDFA947F1 (void);
-// 0x00000138 System.Boolean MyFirstARGame.UIButtons::get_IsIdle()
+// 0x0000013E System.Boolean MyFirstARGame.UIButtons::get_IsIdle()
 extern void UIButtons_get_IsIdle_m5ED6C6E42ABF3B26ACF6EEA95044352B15761AD9 (void);
-// 0x00000139 System.Void MyFirstARGame.UIButtons::TogglePlacementButtonPressed()
+// 0x0000013F System.Void MyFirstARGame.UIButtons::TogglePlacementButtonPressed()
 extern void UIButtons_TogglePlacementButtonPressed_m01C17A77CD5494605B495D8684562A245EB60B41 (void);
-// 0x0000013A System.Void MyFirstARGame.UIButtons::ToggleManipulateButtonPressed()
+// 0x00000140 System.Void MyFirstARGame.UIButtons::ToggleManipulateButtonPressed()
 extern void UIButtons_ToggleManipulateButtonPressed_m0C67A517AFF2FCE85B2D31BBAAD7E0146951501C (void);
-// 0x0000013B System.Boolean MyFirstARGame.UIButtons::IsPointOverUI(UnityEngine.Vector2)
+// 0x00000141 System.Boolean MyFirstARGame.UIButtons::IsPointOverUI(UnityEngine.Vector2)
 extern void UIButtons_IsPointOverUI_mEB9DECF8FE14339F2CCCFBBAEB2CB30E13A116FB (void);
-// 0x0000013C System.Void MyFirstARGame.UIButtons::SetPlacementState(System.Boolean)
+// 0x00000142 System.Void MyFirstARGame.UIButtons::SetPlacementState(System.Boolean)
 extern void UIButtons_SetPlacementState_mCC1C7CF44D62C35E20E87B5834FD14DB5CD24D86 (void);
-// 0x0000013D System.Void MyFirstARGame.UIButtons::SetManipulateState(System.Boolean)
+// 0x00000143 System.Void MyFirstARGame.UIButtons::SetManipulateState(System.Boolean)
 extern void UIButtons_SetManipulateState_m3DD9B297937802AD23662ED627B7D3BEFD9859C5 (void);
-// 0x0000013E System.Void MyFirstARGame.UIButtons::SetButtonState(UnityEngine.GameObject,System.Boolean)
+// 0x00000144 System.Void MyFirstARGame.UIButtons::SetButtonState(UnityEngine.GameObject,System.Boolean)
 extern void UIButtons_SetButtonState_m983613671169884403E2D0CA4C768B21DD1CCF20 (void);
-// 0x0000013F System.Void MyFirstARGame.UIButtons::.ctor()
+// 0x00000145 System.Void MyFirstARGame.UIButtons::.ctor()
 extern void UIButtons__ctor_mF3C3A46F33B9AD236B4A169FA70AAAA5773E2D62 (void);
-// 0x00000140 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::Start()
+// 0x00000146 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::Start()
 extern void ConnectAndJoinRandomLb_Start_m654498A211F20CBE3A2648EF7A5D1ABC5F406BA2 (void);
-// 0x00000141 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::Update()
+// 0x00000147 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::Update()
 extern void ConnectAndJoinRandomLb_Update_m413825AB30ACB547809CE218087D281E8A2B2458 (void);
-// 0x00000142 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnConnected()
+// 0x00000148 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnConnected()
 extern void ConnectAndJoinRandomLb_OnConnected_m5AB09D698A05D7E0ABB90DC58B96103F4740CC85 (void);
-// 0x00000143 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnConnectedToMaster()
+// 0x00000149 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnConnectedToMaster()
 extern void ConnectAndJoinRandomLb_OnConnectedToMaster_m91F5B4362E77D792C0F1C46C026BDAEEB5D764E3 (void);
-// 0x00000144 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnDisconnected(Photon.Realtime.DisconnectCause)
+// 0x0000014A System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnDisconnected(Photon.Realtime.DisconnectCause)
 extern void ConnectAndJoinRandomLb_OnDisconnected_mDEE84E1C10157C22B0CD977AABF8BAF6E733F9FE (void);
-// 0x00000145 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnCustomAuthenticationResponse(System.Collections.Generic.Dictionary`2<System.String,System.Object>)
+// 0x0000014B System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnCustomAuthenticationResponse(System.Collections.Generic.Dictionary`2<System.String,System.Object>)
 extern void ConnectAndJoinRandomLb_OnCustomAuthenticationResponse_m0BC941D88E747C9A75C48164A1304C2BDE803070 (void);
-// 0x00000146 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnCustomAuthenticationFailed(System.String)
+// 0x0000014C System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnCustomAuthenticationFailed(System.String)
 extern void ConnectAndJoinRandomLb_OnCustomAuthenticationFailed_m58F68BCC12C87C37A0E3C99BBD7EBB2911E43A12 (void);
-// 0x00000147 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnRegionListReceived(Photon.Realtime.RegionHandler)
+// 0x0000014D System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnRegionListReceived(Photon.Realtime.RegionHandler)
 extern void ConnectAndJoinRandomLb_OnRegionListReceived_m725991BEFC0A7579B3F1107BB5DE2C738767D1BC (void);
-// 0x00000148 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnRoomListUpdate(System.Collections.Generic.List`1<Photon.Realtime.RoomInfo>)
+// 0x0000014E System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnRoomListUpdate(System.Collections.Generic.List`1<Photon.Realtime.RoomInfo>)
 extern void ConnectAndJoinRandomLb_OnRoomListUpdate_m4EF178F5B7FF803A1C05DDFB5E5DBDF9CE53B573 (void);
-// 0x00000149 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnLobbyStatisticsUpdate(System.Collections.Generic.List`1<Photon.Realtime.TypedLobbyInfo>)
+// 0x0000014F System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnLobbyStatisticsUpdate(System.Collections.Generic.List`1<Photon.Realtime.TypedLobbyInfo>)
 extern void ConnectAndJoinRandomLb_OnLobbyStatisticsUpdate_m6A4DB87496CDE19E4C0D56FADA2178268B2F41DD (void);
-// 0x0000014A System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnJoinedLobby()
+// 0x00000150 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnJoinedLobby()
 extern void ConnectAndJoinRandomLb_OnJoinedLobby_mD5A48030FB4BADCC16784286C72F1820734D590B (void);
-// 0x0000014B System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnLeftLobby()
+// 0x00000151 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnLeftLobby()
 extern void ConnectAndJoinRandomLb_OnLeftLobby_mD0FA0520CA3A6CF43772ED5C8DA88DC3643A6CAF (void);
-// 0x0000014C System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnFriendListUpdate(System.Collections.Generic.List`1<Photon.Realtime.FriendInfo>)
+// 0x00000152 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnFriendListUpdate(System.Collections.Generic.List`1<Photon.Realtime.FriendInfo>)
 extern void ConnectAndJoinRandomLb_OnFriendListUpdate_mA1DD1E3098C1BB9AF2026998B56665D484F19B02 (void);
-// 0x0000014D System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnCreatedRoom()
+// 0x00000153 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnCreatedRoom()
 extern void ConnectAndJoinRandomLb_OnCreatedRoom_m0BB38C14FA1ED134F03D4ED2E47B2CCC1D97B1F1 (void);
-// 0x0000014E System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnCreateRoomFailed(System.Int16,System.String)
+// 0x00000154 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnCreateRoomFailed(System.Int16,System.String)
 extern void ConnectAndJoinRandomLb_OnCreateRoomFailed_m3F6D9E69A2C31504ABD34BBDB2CD06EA255C4F4D (void);
-// 0x0000014F System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnJoinedRoom()
+// 0x00000155 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnJoinedRoom()
 extern void ConnectAndJoinRandomLb_OnJoinedRoom_m5A6191E901FAD558767047BA3DB157E4D1AD1339 (void);
-// 0x00000150 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnJoinRoomFailed(System.Int16,System.String)
+// 0x00000156 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnJoinRoomFailed(System.Int16,System.String)
 extern void ConnectAndJoinRandomLb_OnJoinRoomFailed_mD484E74E080D160F2DD6446DD7DC96FB41587368 (void);
-// 0x00000151 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnJoinRandomFailed(System.Int16,System.String)
+// 0x00000157 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnJoinRandomFailed(System.Int16,System.String)
 extern void ConnectAndJoinRandomLb_OnJoinRandomFailed_mA55EF2ED2497381C3A9564D37F6292C6A92CCA81 (void);
-// 0x00000152 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnLeftRoom()
+// 0x00000158 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnLeftRoom()
 extern void ConnectAndJoinRandomLb_OnLeftRoom_m94779C8B1AFF8C090388E85CBBE2515C5F8D174E (void);
-// 0x00000153 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnRegionPingCompleted(Photon.Realtime.RegionHandler)
+// 0x00000159 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnRegionPingCompleted(Photon.Realtime.RegionHandler)
 extern void ConnectAndJoinRandomLb_OnRegionPingCompleted_mCD5E698C6C0900FF3ACDD4AA4FFC644BC4137CE5 (void);
-// 0x00000154 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::.ctor()
+// 0x0000015A System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::.ctor()
 extern void ConnectAndJoinRandomLb__ctor_m49A174D0CB130D2679BC62AF8E77709B2B705F40 (void);
-// 0x00000155 Photon.Chat.ChatAppSettings Photon.Chat.Demo.AppSettingsExtensions::GetChatSettings(Photon.Realtime.AppSettings)
+// 0x0000015B Photon.Chat.ChatAppSettings Photon.Chat.Demo.AppSettingsExtensions::GetChatSettings(Photon.Realtime.AppSettings)
 extern void AppSettingsExtensions_GetChatSettings_mEE685D01C4B553F55E8016FFE255717777E8975E (void);
-// 0x00000156 System.Void Photon.Chat.Demo.ChannelSelector::SetChannel(System.String)
+// 0x0000015C System.Void Photon.Chat.Demo.ChannelSelector::SetChannel(System.String)
 extern void ChannelSelector_SetChannel_m7E493B7588E65D501C7DA99C72BF36DAA565250E (void);
-// 0x00000157 System.Void Photon.Chat.Demo.ChannelSelector::OnPointerClick(UnityEngine.EventSystems.PointerEventData)
+// 0x0000015D System.Void Photon.Chat.Demo.ChannelSelector::OnPointerClick(UnityEngine.EventSystems.PointerEventData)
 extern void ChannelSelector_OnPointerClick_mB3AE27915FCF9DE3F697BE3F6C93E9F408E4C3B6 (void);
-// 0x00000158 System.Void Photon.Chat.Demo.ChannelSelector::.ctor()
+// 0x0000015E System.Void Photon.Chat.Demo.ChannelSelector::.ctor()
 extern void ChannelSelector__ctor_m894F2E006A64350EDE2E7BA55B4C3D35F5148071 (void);
-// 0x00000159 System.Void Photon.Chat.Demo.ChatAppIdCheckerUI::Update()
+// 0x0000015F System.Void Photon.Chat.Demo.ChatAppIdCheckerUI::Update()
 extern void ChatAppIdCheckerUI_Update_m4776B819CB357298B16E757F4A128977AB204D5F (void);
-// 0x0000015A System.Void Photon.Chat.Demo.ChatAppIdCheckerUI::.ctor()
+// 0x00000160 System.Void Photon.Chat.Demo.ChatAppIdCheckerUI::.ctor()
 extern void ChatAppIdCheckerUI__ctor_m63844AD1E8604F63D26595AD357A104B8ECE50FA (void);
-// 0x0000015B System.String Photon.Chat.Demo.ChatGui::get_UserName()
+// 0x00000161 System.String Photon.Chat.Demo.ChatGui::get_UserName()
 extern void ChatGui_get_UserName_mCF45A1C8EE85544E6D551528D3D93C18FA73E2B1 (void);
-// 0x0000015C System.Void Photon.Chat.Demo.ChatGui::set_UserName(System.String)
+// 0x00000162 System.Void Photon.Chat.Demo.ChatGui::set_UserName(System.String)
 extern void ChatGui_set_UserName_m2DEE5CF82BC6DBB2FA568AF956102BE0E125D0A7 (void);
-// 0x0000015D System.Void Photon.Chat.Demo.ChatGui::Start()
+// 0x00000163 System.Void Photon.Chat.Demo.ChatGui::Start()
 extern void ChatGui_Start_m1BB89F3BC7EE841EDD681423C6077B22AC71DEBC (void);
-// 0x0000015E System.Void Photon.Chat.Demo.ChatGui::Connect()
+// 0x00000164 System.Void Photon.Chat.Demo.ChatGui::Connect()
 extern void ChatGui_Connect_m073A7E59E9008C4D708663A6902A6C19882540E3 (void);
-// 0x0000015F System.Void Photon.Chat.Demo.ChatGui::OnDestroy()
+// 0x00000165 System.Void Photon.Chat.Demo.ChatGui::OnDestroy()
 extern void ChatGui_OnDestroy_m39C68FCB3C786B0D6533DAD7ADD4A998C9F4B0B9 (void);
-// 0x00000160 System.Void Photon.Chat.Demo.ChatGui::OnApplicationQuit()
+// 0x00000166 System.Void Photon.Chat.Demo.ChatGui::OnApplicationQuit()
 extern void ChatGui_OnApplicationQuit_m884A3FA45C488DFE254DD7BCA1FEF917A905133F (void);
-// 0x00000161 System.Void Photon.Chat.Demo.ChatGui::Update()
+// 0x00000167 System.Void Photon.Chat.Demo.ChatGui::Update()
 extern void ChatGui_Update_m1121700352D668D142BE6861A856832006968BE0 (void);
-// 0x00000162 System.Void Photon.Chat.Demo.ChatGui::OnEnterSend()
+// 0x00000168 System.Void Photon.Chat.Demo.ChatGui::OnEnterSend()
 extern void ChatGui_OnEnterSend_m7B3690E336D9A606F4C638FBDA76DF2EB295694F (void);
-// 0x00000163 System.Void Photon.Chat.Demo.ChatGui::OnClickSend()
+// 0x00000169 System.Void Photon.Chat.Demo.ChatGui::OnClickSend()
 extern void ChatGui_OnClickSend_m10B5544E0F1A5F5D46E44BD8AA7002A06C5034CA (void);
-// 0x00000164 System.Void Photon.Chat.Demo.ChatGui::SendChatMessage(System.String)
+// 0x0000016A System.Void Photon.Chat.Demo.ChatGui::SendChatMessage(System.String)
 extern void ChatGui_SendChatMessage_m4BD1A7C0CAAA5112EA9B3C1CE4F0F1ADC7018B5D (void);
-// 0x00000165 System.Void Photon.Chat.Demo.ChatGui::PostHelpToCurrentChannel()
+// 0x0000016B System.Void Photon.Chat.Demo.ChatGui::PostHelpToCurrentChannel()
 extern void ChatGui_PostHelpToCurrentChannel_m707B7D1D556EACB05EC03E08F91A8F1ECA3642E9 (void);
-// 0x00000166 System.Void Photon.Chat.Demo.ChatGui::DebugReturn(ExitGames.Client.Photon.DebugLevel,System.String)
+// 0x0000016C System.Void Photon.Chat.Demo.ChatGui::DebugReturn(ExitGames.Client.Photon.DebugLevel,System.String)
 extern void ChatGui_DebugReturn_m7034DAA4D24C5AB19C4E3341D0CD896058DE710F (void);
-// 0x00000167 System.Void Photon.Chat.Demo.ChatGui::OnConnected()
+// 0x0000016D System.Void Photon.Chat.Demo.ChatGui::OnConnected()
 extern void ChatGui_OnConnected_mEA68753CDC2CAE5D5205A24D535E276CC17F9ED5 (void);
-// 0x00000168 System.Void Photon.Chat.Demo.ChatGui::OnDisconnected()
+// 0x0000016E System.Void Photon.Chat.Demo.ChatGui::OnDisconnected()
 extern void ChatGui_OnDisconnected_m7E9FDB43A4AB5E24B2776DA8E451777DC70AC089 (void);
-// 0x00000169 System.Void Photon.Chat.Demo.ChatGui::OnChatStateChange(Photon.Chat.ChatState)
+// 0x0000016F System.Void Photon.Chat.Demo.ChatGui::OnChatStateChange(Photon.Chat.ChatState)
 extern void ChatGui_OnChatStateChange_mB6DE685B2B39B84A3568D59E86289DEE53A055AD (void);
-// 0x0000016A System.Void Photon.Chat.Demo.ChatGui::OnSubscribed(System.String[],System.Boolean[])
+// 0x00000170 System.Void Photon.Chat.Demo.ChatGui::OnSubscribed(System.String[],System.Boolean[])
 extern void ChatGui_OnSubscribed_mB6644A294FF6AE8EF9E7BE72B2DF72E3FA64C6E4 (void);
-// 0x0000016B System.Void Photon.Chat.Demo.ChatGui::OnSubscribed(System.String,System.String[],System.Collections.Generic.Dictionary`2<System.Object,System.Object>)
+// 0x00000171 System.Void Photon.Chat.Demo.ChatGui::OnSubscribed(System.String,System.String[],System.Collections.Generic.Dictionary`2<System.Object,System.Object>)
 extern void ChatGui_OnSubscribed_mAE9A9BA2F388C116F4CBC4F7A2113BD23E06B0F8 (void);
-// 0x0000016C System.Void Photon.Chat.Demo.ChatGui::InstantiateChannelButton(System.String)
+// 0x00000172 System.Void Photon.Chat.Demo.ChatGui::InstantiateChannelButton(System.String)
 extern void ChatGui_InstantiateChannelButton_m4C6135B30B8F5C9BDF9AE1753E8AFE63B791D401 (void);
-// 0x0000016D System.Void Photon.Chat.Demo.ChatGui::InstantiateFriendButton(System.String)
+// 0x00000173 System.Void Photon.Chat.Demo.ChatGui::InstantiateFriendButton(System.String)
 extern void ChatGui_InstantiateFriendButton_m76FB5E6D0ACF60E58F8EE09C10998D49020B4CD1 (void);
-// 0x0000016E System.Void Photon.Chat.Demo.ChatGui::OnUnsubscribed(System.String[])
+// 0x00000174 System.Void Photon.Chat.Demo.ChatGui::OnUnsubscribed(System.String[])
 extern void ChatGui_OnUnsubscribed_mA0056721C7A125C3E1D4AC1A2143744BC162D905 (void);
-// 0x0000016F System.Void Photon.Chat.Demo.ChatGui::OnGetMessages(System.String,System.String[],System.Object[])
+// 0x00000175 System.Void Photon.Chat.Demo.ChatGui::OnGetMessages(System.String,System.String[],System.Object[])
 extern void ChatGui_OnGetMessages_m9115E1E3EF6E1CC79DBF18C66E4990C33A545E35 (void);
-// 0x00000170 System.Void Photon.Chat.Demo.ChatGui::OnPrivateMessage(System.String,System.Object,System.String)
+// 0x00000176 System.Void Photon.Chat.Demo.ChatGui::OnPrivateMessage(System.String,System.Object,System.String)
 extern void ChatGui_OnPrivateMessage_mE602C58AC56D281B29F1E19F5DFC98A8E480177A (void);
-// 0x00000171 System.Void Photon.Chat.Demo.ChatGui::OnStatusUpdate(System.String,System.Int32,System.Boolean,System.Object)
+// 0x00000177 System.Void Photon.Chat.Demo.ChatGui::OnStatusUpdate(System.String,System.Int32,System.Boolean,System.Object)
 extern void ChatGui_OnStatusUpdate_mEABCBD812C9D9AF133E285BAE9E83994A726E0A4 (void);
-// 0x00000172 System.Void Photon.Chat.Demo.ChatGui::OnUserSubscribed(System.String,System.String)
+// 0x00000178 System.Void Photon.Chat.Demo.ChatGui::OnUserSubscribed(System.String,System.String)
 extern void ChatGui_OnUserSubscribed_m4D1CE2135AEECD1C76069F86FFCD0BD9FDAA2721 (void);
-// 0x00000173 System.Void Photon.Chat.Demo.ChatGui::OnUserUnsubscribed(System.String,System.String)
+// 0x00000179 System.Void Photon.Chat.Demo.ChatGui::OnUserUnsubscribed(System.String,System.String)
 extern void ChatGui_OnUserUnsubscribed_m761BB5EFEE4CBCFFC651343C4AEA1C01DFCADC94 (void);
-// 0x00000174 System.Void Photon.Chat.Demo.ChatGui::OnChannelPropertiesChanged(System.String,System.String,System.Collections.Generic.Dictionary`2<System.Object,System.Object>)
+// 0x0000017A System.Void Photon.Chat.Demo.ChatGui::OnChannelPropertiesChanged(System.String,System.String,System.Collections.Generic.Dictionary`2<System.Object,System.Object>)
 extern void ChatGui_OnChannelPropertiesChanged_m69468897BD50BC64B49B64DB314BCC0BB6D253DE (void);
-// 0x00000175 System.Void Photon.Chat.Demo.ChatGui::OnUserPropertiesChanged(System.String,System.String,System.String,System.Collections.Generic.Dictionary`2<System.Object,System.Object>)
+// 0x0000017B System.Void Photon.Chat.Demo.ChatGui::OnUserPropertiesChanged(System.String,System.String,System.String,System.Collections.Generic.Dictionary`2<System.Object,System.Object>)
 extern void ChatGui_OnUserPropertiesChanged_mA9630BFDC595612F70BA891940B4B1FF350AD215 (void);
-// 0x00000176 System.Void Photon.Chat.Demo.ChatGui::OnErrorInfo(System.String,System.String,System.Object)
+// 0x0000017C System.Void Photon.Chat.Demo.ChatGui::OnErrorInfo(System.String,System.String,System.Object)
 extern void ChatGui_OnErrorInfo_m775944C548C91A8C1461451BA2ED1A925A63F0B8 (void);
-// 0x00000177 System.Void Photon.Chat.Demo.ChatGui::AddMessageToSelectedChannel(System.String)
+// 0x0000017D System.Void Photon.Chat.Demo.ChatGui::AddMessageToSelectedChannel(System.String)
 extern void ChatGui_AddMessageToSelectedChannel_m7765D7820D47185D32243EB135854241B358E4CE (void);
-// 0x00000178 System.Void Photon.Chat.Demo.ChatGui::ShowChannel(System.String)
+// 0x0000017E System.Void Photon.Chat.Demo.ChatGui::ShowChannel(System.String)
 extern void ChatGui_ShowChannel_m9AB1B8EFCEA804119F7891EB21AA299D9EE9C211 (void);
-// 0x00000179 System.Void Photon.Chat.Demo.ChatGui::OpenDashboard()
+// 0x0000017F System.Void Photon.Chat.Demo.ChatGui::OpenDashboard()
 extern void ChatGui_OpenDashboard_m331E5792848FBF938E160C747A9C5D3848E9A265 (void);
-// 0x0000017A System.Void Photon.Chat.Demo.ChatGui::.ctor()
+// 0x00000180 System.Void Photon.Chat.Demo.ChatGui::.ctor()
 extern void ChatGui__ctor_m9914600AC511E7817210F48145D05D3DBDD56B2C (void);
-// 0x0000017B System.Void Photon.Chat.Demo.ChatGui::.cctor()
+// 0x00000181 System.Void Photon.Chat.Demo.ChatGui::.cctor()
 extern void ChatGui__cctor_m9620D5FA4E83914ED07CE310AE0DCF902FD51E62 (void);
-// 0x0000017C System.Void Photon.Chat.Demo.FriendItem::set_FriendId(System.String)
+// 0x00000182 System.Void Photon.Chat.Demo.FriendItem::set_FriendId(System.String)
 extern void FriendItem_set_FriendId_m49FB0C8B978DD2E35361DE3ED6863257B82E4BB2 (void);
-// 0x0000017D System.String Photon.Chat.Demo.FriendItem::get_FriendId()
+// 0x00000183 System.String Photon.Chat.Demo.FriendItem::get_FriendId()
 extern void FriendItem_get_FriendId_mA0037DB139EEC1F38A1B2E31707128111FE5DCD4 (void);
-// 0x0000017E System.Void Photon.Chat.Demo.FriendItem::Awake()
+// 0x00000184 System.Void Photon.Chat.Demo.FriendItem::Awake()
 extern void FriendItem_Awake_m8BCC676379DCE1B967BC706C9247541A424F3C42 (void);
-// 0x0000017F System.Void Photon.Chat.Demo.FriendItem::OnFriendStatusUpdate(System.Int32,System.Boolean,System.Object)
+// 0x00000185 System.Void Photon.Chat.Demo.FriendItem::OnFriendStatusUpdate(System.Int32,System.Boolean,System.Object)
 extern void FriendItem_OnFriendStatusUpdate_mC336B386CEABD37A2BA65254CFE2C5125263E4CD (void);
-// 0x00000180 System.Void Photon.Chat.Demo.FriendItem::.ctor()
+// 0x00000186 System.Void Photon.Chat.Demo.FriendItem::.ctor()
 extern void FriendItem__ctor_mEF78B22B2415C36B99555074B166E333AAB60EC2 (void);
-// 0x00000181 System.Boolean Photon.Chat.Demo.IgnoreUiRaycastWhenInactive::IsRaycastLocationValid(UnityEngine.Vector2,UnityEngine.Camera)
+// 0x00000187 System.Boolean Photon.Chat.Demo.IgnoreUiRaycastWhenInactive::IsRaycastLocationValid(UnityEngine.Vector2,UnityEngine.Camera)
 extern void IgnoreUiRaycastWhenInactive_IsRaycastLocationValid_m47CCC76507FA3811C9E41548B12A0E85830F13C9 (void);
-// 0x00000182 System.Void Photon.Chat.Demo.IgnoreUiRaycastWhenInactive::.ctor()
+// 0x00000188 System.Void Photon.Chat.Demo.IgnoreUiRaycastWhenInactive::.ctor()
 extern void IgnoreUiRaycastWhenInactive__ctor_m6BFAC886ACA5E3CB2403424B3F1D53BD695F833E (void);
-// 0x00000183 System.Void Photon.Chat.Demo.NamePickGui::Start()
+// 0x00000189 System.Void Photon.Chat.Demo.NamePickGui::Start()
 extern void NamePickGui_Start_m10935A8B8CF57FC8505F0178067BA92426555E8B (void);
-// 0x00000184 System.Void Photon.Chat.Demo.NamePickGui::EndEditOnEnter()
+// 0x0000018A System.Void Photon.Chat.Demo.NamePickGui::EndEditOnEnter()
 extern void NamePickGui_EndEditOnEnter_m12622E58FF59DA84D6523AC12874DA9863199C9A (void);
-// 0x00000185 System.Void Photon.Chat.Demo.NamePickGui::StartChat()
+// 0x0000018B System.Void Photon.Chat.Demo.NamePickGui::StartChat()
 extern void NamePickGui_StartChat_m93395F4741F31632667938D7733EB30C48E04750 (void);
-// 0x00000186 System.Void Photon.Chat.Demo.NamePickGui::.ctor()
+// 0x0000018C System.Void Photon.Chat.Demo.NamePickGui::.ctor()
 extern void NamePickGui__ctor_mFF3AFAF1D13B70F7612ADEC741FCC056B2774EB5 (void);
-// 0x00000187 System.Void Photon.Chat.UtilityScripts.EventSystemSpawner::OnEnable()
+// 0x0000018D System.Void Photon.Chat.UtilityScripts.EventSystemSpawner::OnEnable()
 extern void EventSystemSpawner_OnEnable_mE862EC0D6C69AA07F7D83951631687391609E80B (void);
-// 0x00000188 System.Void Photon.Chat.UtilityScripts.EventSystemSpawner::.ctor()
+// 0x0000018E System.Void Photon.Chat.UtilityScripts.EventSystemSpawner::.ctor()
 extern void EventSystemSpawner__ctor_mF241B0B2DADE23009B467FDE4D04A33457D02822 (void);
-// 0x00000189 System.Void Photon.Chat.UtilityScripts.OnStartDelete::Start()
+// 0x0000018F System.Void Photon.Chat.UtilityScripts.OnStartDelete::Start()
 extern void OnStartDelete_Start_m9B7CA6E5BF48F098BD682241471AC10B5A7DE583 (void);
-// 0x0000018A System.Void Photon.Chat.UtilityScripts.OnStartDelete::.ctor()
+// 0x00000190 System.Void Photon.Chat.UtilityScripts.OnStartDelete::.ctor()
 extern void OnStartDelete__ctor_m0680CFA8D0C53535AB1CAF48FB605524BF8BBA75 (void);
-// 0x0000018B System.Void Photon.Chat.UtilityScripts.TextButtonTransition::Awake()
+// 0x00000191 System.Void Photon.Chat.UtilityScripts.TextButtonTransition::Awake()
 extern void TextButtonTransition_Awake_m9486D72B1C4AAF16C5E7A54D449DA6A9F7042A20 (void);
-// 0x0000018C System.Void Photon.Chat.UtilityScripts.TextButtonTransition::OnEnable()
+// 0x00000192 System.Void Photon.Chat.UtilityScripts.TextButtonTransition::OnEnable()
 extern void TextButtonTransition_OnEnable_mDF3ACAD5152C4158E63C0CB55434E0B8F58C64DB (void);
-// 0x0000018D System.Void Photon.Chat.UtilityScripts.TextButtonTransition::OnDisable()
+// 0x00000193 System.Void Photon.Chat.UtilityScripts.TextButtonTransition::OnDisable()
 extern void TextButtonTransition_OnDisable_m6030F868A53F2ACA849BCFF3194B856D0EEED602 (void);
-// 0x0000018E System.Void Photon.Chat.UtilityScripts.TextButtonTransition::OnPointerEnter(UnityEngine.EventSystems.PointerEventData)
+// 0x00000194 System.Void Photon.Chat.UtilityScripts.TextButtonTransition::OnPointerEnter(UnityEngine.EventSystems.PointerEventData)
 extern void TextButtonTransition_OnPointerEnter_m060ADDFAB4FE7E2ADDA013C785097C30E32D2940 (void);
-// 0x0000018F System.Void Photon.Chat.UtilityScripts.TextButtonTransition::OnPointerExit(UnityEngine.EventSystems.PointerEventData)
+// 0x00000195 System.Void Photon.Chat.UtilityScripts.TextButtonTransition::OnPointerExit(UnityEngine.EventSystems.PointerEventData)
 extern void TextButtonTransition_OnPointerExit_mC89333A759DCAEF054B364A0CF05AAAF73A1E06C (void);
-// 0x00000190 System.Void Photon.Chat.UtilityScripts.TextButtonTransition::.ctor()
+// 0x00000196 System.Void Photon.Chat.UtilityScripts.TextButtonTransition::.ctor()
 extern void TextButtonTransition__ctor_m1AC221F8BF501F4B4912898B5D5A1EAD0D2B40E9 (void);
-// 0x00000191 System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::OnEnable()
+// 0x00000197 System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::OnEnable()
 extern void TextToggleIsOnTransition_OnEnable_mEB5D1BAE23AB550072188EE81FBF5E0CB1FA003C (void);
-// 0x00000192 System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::OnDisable()
+// 0x00000198 System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::OnDisable()
 extern void TextToggleIsOnTransition_OnDisable_m017F8825457A0A4400681B78CE1D1DF62999662D (void);
-// 0x00000193 System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::OnValueChanged(System.Boolean)
+// 0x00000199 System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::OnValueChanged(System.Boolean)
 extern void TextToggleIsOnTransition_OnValueChanged_m5938ADE42C6A8502F7D225F42C9E8A6DD15833BA (void);
-// 0x00000194 System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::OnPointerEnter(UnityEngine.EventSystems.PointerEventData)
+// 0x0000019A System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::OnPointerEnter(UnityEngine.EventSystems.PointerEventData)
 extern void TextToggleIsOnTransition_OnPointerEnter_m94378570919CDF3B8C15622F21D0B0B7FD7956B1 (void);
-// 0x00000195 System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::OnPointerExit(UnityEngine.EventSystems.PointerEventData)
+// 0x0000019B System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::OnPointerExit(UnityEngine.EventSystems.PointerEventData)
 extern void TextToggleIsOnTransition_OnPointerExit_m4BB2859E42DE14373D78A2217D72EB17B3FB9D28 (void);
-// 0x00000196 System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::.ctor()
+// 0x0000019C System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::.ctor()
 extern void TextToggleIsOnTransition__ctor_m31BCC4091B72C664D8E1B13777EF1D56DFAC5CDA (void);
-static Il2CppMethodPointer s_methodPointers[406] = 
+static Il2CppMethodPointer s_methodPointers[412] = 
 {
 	CheckRenderLine_get_cameraAR_m4167D685F04A6926337E243DF9345CED31E159E5,
 	CheckRenderLine_set_cameraAR_mA3778AB168C20CB7D1A88E7AD8A72705FDA1795F,
@@ -1016,7 +1028,9 @@ static Il2CppMethodPointer s_methodPointers[406] =
 	NetworkCommunication_Start_mD787EB50685A715B0C49FC7CCAD07E72C83E3762,
 	NetworkCommunication_Update_m84519F4D5990B74BE34665857C35C0EF69B1DEC6,
 	NetworkCommunication_IncrementScore_mD04B8ACA21622695B4E360F548272EEAAFDE03CC,
+	NetworkCommunication_SetScoreText_m31ABDD5C42C161FBC242227D74FC9936CE57CB05,
 	NetworkCommunication_Network_SetPlayerScore_mD9E17B5A409826335D4FE404072AB53261ED09C0,
+	NetworkCommunication_Network_SetPlayerScoreText_m8CEECD94610419F854E8F1E3B70E3D92E3597EB2,
 	NetworkCommunication_UpdateForNewPlayer_m4C9E9A42A1A442DE8CCFB9BE867C5B68B6C98ECC,
 	NetworkCommunication__ctor_mAA73495422F13281EC35B48B394C0276FC55B994,
 	NetworkedInteractable_Start_m537856C8A522D8C7E66CA05E6586B21D2D0C9677,
@@ -1032,6 +1046,7 @@ static Il2CppMethodPointer s_methodPointers[406] =
 	NetworkLauncher_OnGUI_m10084D920D56F84EC0841359AA23E57C0EBD5146,
 	NetworkLauncher_OnConnectedToMaster_m146CEC25494F6EA6902EDF899F060880B0D0DD1A,
 	NetworkLauncher_OnJoinedRoom_m62787C1D9FF897C4539951F31469E4B1EBFCCA6D,
+	NetworkLauncher_OnMasterClientSwitched_m231F45F5C2135AE4A1910B57179EECECCC6C6D21,
 	NetworkLauncher_OnLeftRoom_m5D93C0A642BCD989D284FF5F7822FCF48BF3D734,
 	NetworkLauncher_OnPlayerEnteredRoom_m5C3E192D309C66BFE54FE1CEEF98AFD160CC4049,
 	NetworkLauncher__ctor_m051E1D92B0DF61153908455F244500901240A299,
@@ -1050,6 +1065,9 @@ static Il2CppMethodPointer s_methodPointers[406] =
 	PlaceOnPlane_OnPressCancel_mCA92221AC84442965C501179FDE9EE64E2CE0D25,
 	PlaceOnPlane__ctor_mD6B04F8AB96D9576B5CFE55CECE3EF8D2C329BC1,
 	PlaceOnPlane__cctor_mDCAED88407B954F194B3DECA022919336F94B0AD,
+	PlantPicker_Awake_mD79801A941B83A3506408934AB91E0D824923AB6,
+	PlantPicker_OnPressBegan_m02971B1ACD5B55FB0EA7433C9F3D9B89FFDCA2EF,
+	PlantPicker__ctor_m48061B9778AF67D12ECDEBFA33758F30FEE4F352,
 	PressEventsProvider_add_PressBegan_m9421C8727C2FB807E7AE39896E6297B244E9B05B,
 	PressEventsProvider_remove_PressBegan_mCD5444D2EC61E4D9C830073718BBB18E809EE49E,
 	PressEventsProvider_add_Pressed_mC3E6FD2D223B58A5A82CF7EF58844B899556CDD2,
@@ -1117,15 +1135,15 @@ static Il2CppMethodPointer s_methodPointers[406] =
 	U3CU3Ec__cctor_mD7027006423799369542DC127CFF6A9A1D55CC01,
 	U3CU3Ec__ctor_m385C743D8E2C071F546803200D71215FE6A5554C,
 	U3CU3Ec_U3Cget_ShowOutlineU3Eb__7_0_mA7FC5C211F873A45D79AADF5C0EA843A889D47D5,
-	TreasureManager_get_SpawnedObject_m331844FAAB6C541C9764DB2AC4E1EA5BC486644D,
-	TreasureManager_set_SpawnedObject_mF89DE5811F518A523BF3C31FBFECB4E98C46E818,
-	TreasureManager_get_CanPlace_mAAAB87B24D0A3B8027757F83F415481264F5F4CC,
-	TreasureManager_set_CanPlace_m9BA467B6F8E8F1C9188663BA815D3D53E3D1822F,
-	TreasureManager_Awake_m97217FE64AC419530BCFCCDCA814A7E26F8ED3A1,
-	TreasureManager_Spawn_m6A76E5432D8AFA4102A53935FDF2598AA23A589D,
-	TreasureManager_CreateOrUpdateObject_mB6AE10D5D44738F3F8BF6F35605A59E719BAE6D7,
+	TreasureManager_Start_m2A9E153153609BD3B837BFE49617948C8FF38612,
+	TreasureManager_Spawn_m8EA5BA7E67750D5A2CE721B48FC1FCA131D3200D,
 	TreasureManager__ctor_mA38CC6B763600B94B38C749DD5FFE1292E89B64F,
-	TreasureManager__cctor_mBA9667EAFF6A9DEB0BFAFEA1FBB496DFEBEB56A1,
+	U3CSpawnU3Ed__4__ctor_m0934C2E7464195836C82824B9E1A206CC7EAF935,
+	U3CSpawnU3Ed__4_System_IDisposable_Dispose_m2EC75F277185BA50ED6541A5831A0A8461DF7A5D,
+	U3CSpawnU3Ed__4_MoveNext_m40556D8DC04809359DE0F408AB14C3B7E5F38A1B,
+	U3CSpawnU3Ed__4_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m6FE4B197122B0483E4B49A24A9FE2E44DE608A9D,
+	U3CSpawnU3Ed__4_System_Collections_IEnumerator_Reset_mE3077CEB0325156739769429EE37AB7828B79AF7,
+	U3CSpawnU3Ed__4_System_Collections_IEnumerator_get_Current_m8DBE909E42A5437B5AEE24A5FED03B5DE55E8441,
 	ExitButton_ExitGame_mADFC8CC899A0A1A85649E75456CC7C0EF9F94B90,
 	ExitButton__ctor_m0687743C47FDB017959781F23A14058FDFA947F1,
 	UIButtons_get_IsIdle_m5ED6C6E42ABF3B26ACF6EEA95044352B15761AD9,
@@ -1224,7 +1242,7 @@ static Il2CppMethodPointer s_methodPointers[406] =
 	TextToggleIsOnTransition_OnPointerExit_m4BB2859E42DE14373D78A2217D72EB17B3FB9D28,
 	TextToggleIsOnTransition__ctor_m31BCC4091B72C664D8E1B13777EF1D56DFAC5CDA,
 };
-static const int32_t s_InvokerIndices[406] = 
+static const int32_t s_InvokerIndices[412] = 
 {
 	6686,
 	5421,
@@ -1425,7 +1443,9 @@ static const int32_t s_InvokerIndices[406] =
 	6799,
 	6799,
 	6799,
+	5421,
 	2939,
+	5421,
 	5421,
 	6799,
 	6799,
@@ -1441,6 +1461,7 @@ static const int32_t s_InvokerIndices[406] =
 	6799,
 	6799,
 	6799,
+	5421,
 	6799,
 	5421,
 	6799,
@@ -1459,6 +1480,9 @@ static const int32_t s_InvokerIndices[406] =
 	6799,
 	6799,
 	10484,
+	6799,
+	5508,
+	6799,
 	5421,
 	5421,
 	5421,
@@ -1526,15 +1550,15 @@ static const int32_t s_InvokerIndices[406] =
 	10484,
 	6799,
 	3844,
+	6799,
 	6686,
-	5421,
+	6799,
+	5387,
+	6799,
 	6576,
-	5313,
+	6686,
 	6799,
-	6799,
-	3039,
-	6799,
-	10484,
+	6686,
 	6799,
 	6799,
 	6576,
@@ -1673,7 +1697,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	406,
+	412,
 	s_methodPointers,
 	0,
 	NULL,

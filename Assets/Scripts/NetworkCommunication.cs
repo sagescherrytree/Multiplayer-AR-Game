@@ -2,7 +2,7 @@ namespace MyFirstARGame
 {
     using Photon.Pun;
     using UnityEngine;
-    
+
     /// <summary>
     /// You can use this class to make RPC calls between the clients. It is already spawned on each client with networking capabilities.
     /// </summary>
@@ -31,12 +31,24 @@ namespace MyFirstARGame
             this.photonView.RPC("Network_SetPlayerScore", RpcTarget.All, playerName, currentScore + 1);
         }
 
+        public void SetScoreText(string s)
+        {
+            this.photonView.RPC("Network_SetPlayerScoreText", RpcTarget.All, s);
+
+        }
+
         // Pun system gibberish that I do not understand.
         [PunRPC]
         public void Network_SetPlayerScore(string playerName, int newScore)
         {
             Debug.Log($"Player {playerName} scored!");
             this.scoreboard.SetScore(playerName, newScore);
+        }
+
+        [PunRPC]
+        public void Network_SetPlayerScoreText(string s)
+        {
+            Debug.Log($"Debug text: {s}");
         }
 
         public void UpdateForNewPlayer(Photon.Realtime.Player player)

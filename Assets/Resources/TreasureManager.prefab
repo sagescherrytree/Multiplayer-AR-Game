@@ -48,7 +48,7 @@ MonoBehaviour:
   plantPrefab: {fileID: 2123881950708857618, guid: 2cfcb1a29e7d4eb46bb3410201aedce8,
     type: 3}
   numPlants: 10
-  spawnRate: 10
+  spawnRate: 60
 --- !u!114 &-6040755477351660558
 MonoBehaviour:
   m_ObjectHideFlags: 0

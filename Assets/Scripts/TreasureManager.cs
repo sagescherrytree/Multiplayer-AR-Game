@@ -1,4 +1,4 @@
-namespace MyFirstARGame 
+namespace MyFirstARGame
 {
     using System.Collections.Generic;
     using UnityEngine;
@@ -33,7 +33,8 @@ namespace MyFirstARGame
             {
                 Debug.Log("Master client");
                 StartCoroutine(Spawn());
-            } else
+            }
+            else
             {
                 Debug.Log("Not Master Client");
             }
@@ -46,13 +47,13 @@ namespace MyFirstARGame
             {
                 for (int i = 0; i < numPlants; i++)
                 {
-                    Vector3 spawnPoint = new(Random.Range(-5f, 5f), 0, Random.Range(-5f, 5f));
+                    Vector3 spawnPoint = new(Random.Range(-5f, 5f), 1, Random.Range(-5f, 5f));
                     PhotonNetwork.Instantiate("Plant", spawnPoint, Quaternion.identity, data: new object[] { });
                 }
 
                 yield return new WaitForSeconds(spawnRate);
             }
-            
+
         }
 
         /*
