@@ -16,7 +16,10 @@ namespace MyFirstARGame
         // Start is called before the first frame update
         void Start()
         {
-            Instantiate(treasureManager);
+            if (PhotonNetwork.IsMasterClient)
+            {
+                Instantiate(treasureManager);
+            }
         }
 
         // Update is called once per frame

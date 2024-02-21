@@ -33,14 +33,8 @@ namespace MyFirstARGame
 
         private void Start()
         {
-            if (PhotonNetwork.IsMasterClient)
-            {
-                StartCoroutine(Spawn());
-                StartCoroutine(SpawnPositiveBuff());
-                StartCoroutine(SpawnNegativeEffect());
-            }
+            StartCoroutine(Spawn());
         }
-
 
         public System.Collections.IEnumerator Spawn()
         {
@@ -51,28 +45,11 @@ namespace MyFirstARGame
                     Vector3 spawnPoint = new(Random.Range(-5f, 5f), 1, Random.Range(-5f, 5f));
                     PhotonNetwork.Instantiate("Plant", spawnPoint, Quaternion.identity, data: new object[] { });
                 }
-
-                yield return new WaitForSeconds(spawnRate);
-            }
-
-        }
-
-        public System.Collections.IEnumerator SpawnPositiveBuff()
-        {
-            while (true)
-            {
                 for (int i = 0; i < numPositiveBuffs; i++)
                 {
                     Vector3 spawnPoint = new(Random.Range(-5f, 5f), 1, Random.Range(-5f, 5f));
                     PhotonNetwork.Instantiate("PositivePowerUp", spawnPoint, Quaternion.identity, data: new object[] { });
                 }
-                yield return new WaitForSeconds(spawnRate);
-            }
-        }
-        public System.Collections.IEnumerator SpawnNegativeEffect()
-        {
-            while (true)
-            {
                 for (int i = 0; i < numNegativeEffects; i++)
                 {
                     Vector3 spawnPoint = new(Random.Range(-5f, 5f), 1, Random.Range(-5f, 5f));
