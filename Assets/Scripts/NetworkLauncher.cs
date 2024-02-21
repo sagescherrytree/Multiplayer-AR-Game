@@ -99,12 +99,13 @@ namespace MyFirstARGame
         {
             if(Input.GetKeyDown(KeyCode.A))
             {
-                WinLossUI winLossManager = GameObject.FindObjectOfType<WinLossUI>();
-                winLossManager.showText(true);
-                Debug.Log("Kill game.");
+                NetworkCommunication.EndGame(0);
+                //WinLossUI winLossManager = GameObject.FindObjectOfType<WinLossUI>();
+                //winLossManager.showText(true);
+                //Debug.Log("Kill game.");
 
-                SceneManager.MoveGameObjectToScene(this.gameObject, SceneManager.GetActiveScene());
-                SceneManager.LoadScene("Menu");
+                //SceneManager.MoveGameObjectToScene(this.gameObject, SceneManager.GetActiveScene());
+                //SceneManager.LoadScene("Menu");
             }
         }
 

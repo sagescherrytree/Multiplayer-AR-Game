@@ -51,6 +51,8 @@ MonoBehaviour:
   - Network_GameOver
   - Network_StartGame
   - Network_EndGame
+  - Network_AddPlayer
+  - Network_DestroyItem
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

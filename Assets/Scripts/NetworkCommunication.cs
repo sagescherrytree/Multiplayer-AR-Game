@@ -20,6 +20,12 @@ namespace MyFirstARGame
         private TreasureManager treasureManagerPrefab;
 
         private TreasureManager treasureManagerInstance = null;
+
+        [SerializeField]
+        public GameObject endGame;
+
+        [SerializeField]
+        private int numPlayers;
         
         
         // Start is called before the first frame update
@@ -29,10 +35,28 @@ namespace MyFirstARGame
             {
                 treasureManagerInstance = Instantiate(treasureManagerPrefab).GetComponent<TreasureManager>();
             }
-            else
+            AddPlayer();
+        }
+
+        public void AddPlayer()
+        {
+            this.photonView.RPC("Network_AddPlayer", RpcTarget.All);
+        }
+
+        [PunRPC]
+        public void Network_AddPlayer()
+        {
+            numPlayers++;
+            if (numPlayers >= 2)
             {
-                photonView.RPC("Network_StartGame", RpcTarget.MasterClient);
+                this.photonView.RPC("Network_StartGame", RpcTarget.MasterClient);
             }
+        }
+
+        [PunRPC]
+        private void Network_StartGame()
+        {
+            treasureManagerInstance.StartGame();
         }
 
         public void ChangeScore(int delta)
@@ -50,7 +74,6 @@ namespace MyFirstARGame
             return currentScore;
         }
         
-        // Pun system gibberish that I do not understand.
         [PunRPC]
         public void Network_SetPlayerScore(string playerName, int newScore)
         {
@@ -60,13 +83,18 @@ namespace MyFirstARGame
 
         public void DestroyItem(int viewId)
         {
-            photonView.RPC("Network_DestroyPhotonView", RpcTarget.MasterClient, viewId);
+            photonView.RPC("Network_DestroyItem", RpcTarget.MasterClient, viewId);
         }
         
         [PunRPC]
-        public void Network_DestroyPhotonView(int viewId)
+        public void Network_DestroyItem(int viewId)
         {
             treasureManagerInstance.DestroyItem(viewId);
+        }
+        
+        public void EndGame(int winner)
+        {
+            photonView.RPC("Network_EndGame", RpcTarget.All, winner);
         }
 
         public void DebugMessage(string s)
@@ -80,22 +108,29 @@ namespace MyFirstARGame
             Debug.Log($"Debug Message: {s}");
         }
 
-        public void EndGame(int winner)
+
+        public void Reset(int playerNum)
         {
-            photonView.RPC("Network_EndGame", RpcTarget.All, winner);
+            // Reset values in scoreboard.
+            this.scoreboard.Clear();
+            // Restart the treas
         }
 
         [PunRPC]
         private void Network_EndGame(int winner)
         {
-            SceneManager.LoadScene(winner == PhotonNetwork.LocalPlayer.ActorNumber ? "Victory" : "Game_Over");
+            numPlayers = 0;
+            scoreboard.Clear();
+            if (treasureManagerInstance != null)
+            {
+                treasureManagerInstance.Stop();
+            }
+            endGame.SetActive(true);
+            // WinLossUI winLossManager = GameObject.FindObjectOfType<WinLossUI>();
+            // winLossManager.showText(winner == PhotonNetwork.LocalPlayer.ActorNumber);
         }
 
-        [PunRPC]
-        private void Network_StartGame()
-        {
-            treasureManagerInstance.StartGame();
-        }
+
         
         [PunRPC]
         public void UpdateForNewPlayer(Photon.Realtime.Player player)

@@ -2262,6 +2262,11 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1929486468229110667, guid: 8976bb0de8a36d940bc7bc5bf3a11473,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3041066721575451392, guid: 8976bb0de8a36d940bc7bc5bf3a11473,
         type: 3}
       propertyPath: m_TargetGraphic
@@ -2275,22 +2280,22 @@ PrefabInstance:
     - target: {fileID: 5148724656370481534, guid: 8976bb0de8a36d940bc7bc5bf3a11473,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.90196085
+      value: 0.6320754
       objectReference: {fileID: 0}
     - target: {fileID: 5148724656370481534, guid: 8976bb0de8a36d940bc7bc5bf3a11473,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.90196085
+      value: 0.6133811
       objectReference: {fileID: 0}
     - target: {fileID: 5148724656370481534, guid: 8976bb0de8a36d940bc7bc5bf3a11473,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.90196085
+      value: 0.5456123
       objectReference: {fileID: 0}
     - target: {fileID: 5148724656370481534, guid: 8976bb0de8a36d940bc7bc5bf3a11473,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5172511950006567701, guid: 8976bb0de8a36d940bc7bc5bf3a11473,
         type: 3}
@@ -2437,8 +2442,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: WinLossPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 8501050617724546487, guid: 8976bb0de8a36d940bc7bc5bf3a11473,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 5148724656370481534, guid: 8976bb0de8a36d940bc7bc5bf3a11473, type: 3}
     - {fileID: 2498296498449235739, guid: 8976bb0de8a36d940bc7bc5bf3a11473, type: 3}
     - {fileID: 6006941754009505551, guid: 8976bb0de8a36d940bc7bc5bf3a11473, type: 3}
     m_AddedGameObjects: []

@@ -92,8 +92,9 @@ namespace MyFirstARGame
             
             if (networkCommunication.GetCurrentScore() >= maxScore)
             {
+                // networkCommunication.Reset(PhotonNetwork.LocalPlayer.ActorNumber);
                 networkCommunication.EndGame(PhotonNetwork.LocalPlayer.ActorNumber);
-                SceneManager.LoadScene("Victory");
+                // SceneManager.LoadScene("Victory");
             }
         }
     }
