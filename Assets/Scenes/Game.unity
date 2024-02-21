@@ -1377,7 +1377,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxScore: 10
-  particleEffectPrefab: {fileID: 0}
+  particleEffectPrefab: {fileID: 8963312824260437289, guid: 953d48a78b4ecbf48873106f177d0994,
+    type: 3}
 --- !u!1 &835797453
 GameObject:
   m_ObjectHideFlags: 0

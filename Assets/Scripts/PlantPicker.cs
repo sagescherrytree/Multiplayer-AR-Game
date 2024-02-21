@@ -52,8 +52,6 @@ namespace MyFirstARGame
             
             selectedObject = hitData.transform.gameObject;
 
-            // Spawn partcles.
-            PhotonNetwork.Instantiate("ParticleEffect", hitData.point, Quaternion.identity);
             var networkCommunication = FindObjectOfType<NetworkCommunication>();
             
             networkCommunication.DebugMessage($"Hit a {selectedObject.tag}");
@@ -86,7 +84,9 @@ namespace MyFirstARGame
                     return;
                 }
             }
-            
+            // Spawn partcles.
+            //PhotonNetwork.Instantiate(particleEffectPrefab.name, hitData.point, Quaternion.identity);
+
             networkCommunication.DestroyItem(selectedObject.GetComponent<PhotonView>().ViewID);
             networkCommunication.ChangeScore(points);
             
