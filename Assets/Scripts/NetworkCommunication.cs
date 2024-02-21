@@ -1,7 +1,10 @@
+using UnityEngine.Serialization;
+
 namespace MyFirstARGame
 {
     using Photon.Pun;
     using UnityEngine;
+    using UnityEngine.SceneManagement;
 
     /// <summary>
     /// You can use this class to make RPC calls between the clients. It is already spawned on each client with networking capabilities.
@@ -11,24 +14,21 @@ namespace MyFirstARGame
         [SerializeField]
         private Scoreboard scoreboard;
 
-        [SerializeField] private TreasureManager treasureManager;
+        [SerializeField]
+        private TreasureManager treasureManagerPrefab;
+
+        private TreasureManager treasureManagerInstance = null;
+        
         
         // Start is called before the first frame update
         void Start()
         {
             if (PhotonNetwork.IsMasterClient)
             {
-                Instantiate(treasureManager);
+                treasureManagerInstance = Instantiate(treasureManagerPrefab).GetComponent<TreasureManager>();
             }
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
-
-        // Increment score function.
         public void ChangeScore(int delta)
         {
             var playerName = $"Player {PhotonNetwork.LocalPlayer.ActorNumber}";
@@ -52,7 +52,7 @@ namespace MyFirstARGame
             this.scoreboard.SetScore(playerName, newScore);
         }
 
-        public void DestroyPhotonView(int viewId)
+        public void DestroyItem(int viewId)
         {
             photonView.RPC("Network_DestroyPhotonView", RpcTarget.MasterClient, viewId);
         }
@@ -60,11 +60,7 @@ namespace MyFirstARGame
         [PunRPC]
         public void Network_DestroyPhotonView(int viewId)
         {
-            var pv = PhotonView.Find(viewId);
-            if (pv != null)
-            {
-                PhotonNetwork.Destroy(pv);
-            }
+            treasureManagerInstance.DestroyItem(viewId);
         }
 
         public void DebugMessage(string s)
@@ -76,6 +72,22 @@ namespace MyFirstARGame
         private void Network_DebugMessage(string s)
         {
             Debug.Log($"Debug Message: {s}");
+        }
+
+        public void GameOver()
+        {
+            photonView.RPC("Network_GameOver", RpcTarget.Others);
+        }
+
+        [PunRPC]
+        private void Network_GameOver()
+        {
+            if (PhotonNetwork.IsMasterClient)
+            {
+                treasureManagerInstance.Stop();
+                return;
+            }
+            SceneManager.LoadScene("Game_Over");
         }
         
         public void UpdateForNewPlayer(Photon.Realtime.Player player)

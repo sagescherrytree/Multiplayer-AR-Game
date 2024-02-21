@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreboard: {fileID: 3932034382665504109}
-  treasureManager: {fileID: 6844053442295058506, guid: 9c398a7463739f14dae8f3f5271320c3,
+  treasureManagerPrefab: {fileID: 6844053442295058506, guid: 9c398a7463739f14dae8f3f5271320c3,
     type: 3}
 --- !u!114 &3932034382665504109
 MonoBehaviour:

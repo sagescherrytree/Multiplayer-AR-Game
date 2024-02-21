@@ -47,6 +47,8 @@ MonoBehaviour:
   - Network_DestroyObject
   - Network_DebugMessage
   - Network_DestroyPhotonView
+  - UpdateForNewPlayer
+  - Network_GameOver
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

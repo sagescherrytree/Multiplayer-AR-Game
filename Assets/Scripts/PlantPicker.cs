@@ -75,16 +75,13 @@ namespace MyFirstARGame
                 }
             }
             
-            networkCommunication.DestroyPhotonView(selectedObject.GetComponent<PhotonView>().ViewID);
+            networkCommunication.DestroyItem(selectedObject.GetComponent<PhotonView>().ViewID);
             networkCommunication.ChangeScore(points);
             
             if (networkCommunication.GetCurrentScore() >= maxScore)
             {
-                // Go to game over scene.
-                // Need to add logic to go to victory screen for the current player.
+                networkCommunication.GameOver();
                 SceneManager.LoadScene("Victory");
-                // Else if other players interrupted.
-                //SceneManager.LoadScene("Game_Over");
             }
         }
     }
