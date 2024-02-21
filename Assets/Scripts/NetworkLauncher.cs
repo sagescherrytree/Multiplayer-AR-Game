@@ -4,6 +4,8 @@ namespace MyFirstARGame
 {
     using Photon.Pun;
     using UnityEngine;
+    using UnityEngine.SceneManagement;
+    using static UnityEngine.GraphicsBuffer;
 
     /// <summary>
     /// Enables basic network functionality by connecting to the Photon server.
@@ -60,7 +62,14 @@ namespace MyFirstARGame
         private void Start()
         {
             // Try to connect to the master server.
-            PhotonNetwork.ConnectUsingSettings();
+            if (PhotonNetwork.InRoom)
+            {
+                this.OnJoinedRoom();
+            }
+            else
+            {
+                PhotonNetwork.ConnectUsingSettings();
+            }
         }
 
         private void OnGUI()
@@ -80,8 +89,23 @@ namespace MyFirstARGame
             {
                 GUI.Label(new Rect(0, Screen.height / 2 + 300, 100, 100), "Not joined to room", style);
             }
-            
-            GUI.Label(new Rect(0, Screen.height / 2 + 350, 100, 100), PhotonNetwork.CurrentRoom.Name, style);
+            if (PhotonNetwork.InRoom)
+            {
+                GUI.Label(new Rect(0, Screen.height / 2 + 350, 100, 100), PhotonNetwork.CurrentRoom.Name, style);
+            }
+        }
+
+        private void Update()
+        {
+            if(Input.GetKeyDown(KeyCode.A))
+            {
+                WinLossUI winLossManager = GameObject.FindObjectOfType<WinLossUI>();
+                winLossManager.showText(true);
+                Debug.Log("Kill game.");
+
+                SceneManager.MoveGameObjectToScene(this.gameObject, SceneManager.GetActiveScene());
+                SceneManager.LoadScene("Menu");
+            }
         }
 
         public override void OnConnectedToMaster()
