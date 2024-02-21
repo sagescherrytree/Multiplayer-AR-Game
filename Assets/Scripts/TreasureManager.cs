@@ -77,11 +77,11 @@ namespace MyFirstARGame
                     PhotonNetwork.Instantiate("Snitch", spawnPoint, Quaternion.identity, data: new object[] { });
                 }
                 
-                // golden snitch
-                if (Random.Range(0f, 1f) < 0.2) {
-                    Vector3 spawnPoint = new(Random.Range(-5f, 5f), 1, Random.Range(-5f,5f));
-                    PhotonNetwork.Instantiate("Snitch", spawnPoint, Quaternion.identity, data: new object[] { });
-                }
+                // // golden snitch
+                // if (Random.Range(0f, 1f) < 0.2) {
+                //     Vector3 spawnPoint = new(Random.Range(-5f, 5f), 1, Random.Range(-5f,5f));
+                //     PhotonNetwork.Instantiate("Snitch", spawnPoint, Quaternion.identity, data: new object[] { });
+                // }
                 yield return new WaitForSeconds(spawnRate);
             }
         }

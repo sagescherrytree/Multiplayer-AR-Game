@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3439707718345353834}
   m_Layer: 0
   m_Name: Snitch
-  m_TagString: plant
+  m_TagString: snitch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
