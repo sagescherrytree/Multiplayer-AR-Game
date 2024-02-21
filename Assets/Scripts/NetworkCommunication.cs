@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Threading;
 using UnityEngine.Serialization;
 
 namespace MyFirstARGame
@@ -26,6 +28,10 @@ namespace MyFirstARGame
             if (PhotonNetwork.IsMasterClient)
             {
                 treasureManagerInstance = Instantiate(treasureManagerPrefab).GetComponent<TreasureManager>();
+            }
+            else
+            {
+                photonView.RPC("Network_StartGame", RpcTarget.MasterClient);
             }
         }
 
@@ -74,22 +80,24 @@ namespace MyFirstARGame
             Debug.Log($"Debug Message: {s}");
         }
 
-        public void GameOver()
+        public void EndGame(int winner)
         {
-            photonView.RPC("Network_GameOver", RpcTarget.Others);
+            photonView.RPC("Network_EndGame", RpcTarget.All, winner);
         }
 
         [PunRPC]
-        private void Network_GameOver()
+        private void Network_EndGame(int winner)
         {
-            if (PhotonNetwork.IsMasterClient)
-            {
-                treasureManagerInstance.Stop();
-                return;
-            }
-            SceneManager.LoadScene("Game_Over");
+            SceneManager.LoadScene(winner == PhotonNetwork.LocalPlayer.ActorNumber ? "Victory" : "Game_Over");
+        }
+
+        [PunRPC]
+        private void Network_StartGame()
+        {
+            treasureManagerInstance.StartGame();
         }
         
+        [PunRPC]
         public void UpdateForNewPlayer(Photon.Realtime.Player player)
         {
             // Send current player scores to new player.

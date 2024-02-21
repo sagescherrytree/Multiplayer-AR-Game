@@ -1,4 +1,5 @@
 ﻿using System;
+using Photon.Pun;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -90,7 +91,6 @@ namespace UnityEngine.XR.ARFoundation.Samples
         {
             SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
         }
-
         public void ExitGame()
         {
 #if UNITY_EDITOR

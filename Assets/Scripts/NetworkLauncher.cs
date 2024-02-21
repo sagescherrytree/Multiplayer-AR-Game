@@ -1,3 +1,5 @@
+using Photon.Realtime;
+
 namespace MyFirstARGame
 {
     using Photon.Pun;
@@ -66,8 +68,9 @@ namespace MyFirstARGame
             // Creating a simple GUI on the phone screen to we can debug the connection.
             GUIStyle style = new()
             {
-                fontSize = 30
+                fontSize = 30,
             };
+            style.normal.textColor = Color.red;
 
             if (this.isJoinedToRoom)
             {
@@ -77,6 +80,8 @@ namespace MyFirstARGame
             {
                 GUI.Label(new Rect(0, Screen.height / 2 + 300, 100, 100), "Not joined to room", style);
             }
+            
+            GUI.Label(new Rect(0, Screen.height / 2 + 350, 100, 100), PhotonNetwork.CurrentRoom.Name, style);
         }
 
         public override void OnConnectedToMaster()
@@ -109,9 +114,15 @@ namespace MyFirstARGame
             this.isJoinedToRoom = false;
         }
 
+        public override void OnDisconnected(DisconnectCause cause)
+        {
+            this.isJoinedToRoom = false;
+        }
+
         public override void OnPlayerEnteredRoom(Photon.Realtime.Player newPlayer)
         {
             this.NetworkCommunication.UpdateForNewPlayer(newPlayer);
         }
+        
     }
 }

@@ -12,14 +12,9 @@ namespace MyFirstARGame
     //[RequireComponent(typeof(Camera))]
     public class TreasureManager : MonoBehaviourPunCallbacks
     {
-        [SerializeField]
-        public GameObject plantPrefab;
-        [SerializeField]
-        public GameObject positiveBuffPrefab;
-        [SerializeField]
-        public GameObject negativeEffectPrefab;
-        [SerializeField]
-        public GameObject goldenSnitch;
+        [SerializeField] public GameObject plantPrefab;
+
+        [SerializeField]  public GameObject goldenSnitch;
 
         [SerializeField] public GameObject positiveBuffPrefab;
 
