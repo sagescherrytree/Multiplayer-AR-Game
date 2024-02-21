@@ -20,6 +20,8 @@ namespace MyFirstARGame
         public GameObject positiveBuffPrefab;
         [SerializeField]
         public GameObject negativeEffectPrefab;
+        [SerializeField]
+        public GameObject goldenSnitch;
 
         [SerializeField]
         int numPlants;
@@ -54,6 +56,12 @@ namespace MyFirstARGame
                 {
                     Vector3 spawnPoint = new(Random.Range(-5f, 5f), 1, Random.Range(-5f, 5f));
                     PhotonNetwork.Instantiate("NegativePenalty", spawnPoint, Quaternion.identity, data: new object[] { });
+                }
+                
+                // golden snitch
+                if (Random.Range(0f, 1f) < 0.2) {
+                    Vector3 spawnPoint = new(Random.Range(-5f, 5f), 1, Random.Range(-5f,5f));
+                    PhotonNetwork.Instantiate("Snitch", spawnPoint, Quaternion.identity, data: new object[] { });
                 }
                 yield return new WaitForSeconds(spawnRate);
             }
