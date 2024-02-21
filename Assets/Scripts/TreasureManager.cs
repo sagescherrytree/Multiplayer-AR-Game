@@ -28,12 +28,16 @@ namespace MyFirstARGame
 
         private HashSet<int> _spawnedItems = new();
 
-        private bool _spawnObjects;
+        [SerializeField] private bool _isRunning = false;
 
-        private void Start()
+        public void StartGame()
         {
-            _spawnObjects = true;
-            StartCoroutine(SpawnCoroutine());
+            if (!_isRunning)
+            {
+                _isRunning = true;
+                StartCoroutine(SpawnCoroutine());
+            }
+            _isRunning = true;
         }
 
         private void Spawn(string resource)
@@ -48,7 +52,7 @@ namespace MyFirstARGame
 
         private IEnumerator SpawnCoroutine()
         {
-            while (_spawnObjects)
+            while (_isRunning)
             {
                 for (var i = 0; i < numPlants; i++)
                 {
@@ -81,7 +85,7 @@ namespace MyFirstARGame
 
         public void Stop()
         {
-            _spawnObjects = false;
+            _isRunning = false;
             foreach (int itemId in _spawnedItems)
             {
                 var itemPhotonView = PhotonView.Find(itemId);
