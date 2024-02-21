@@ -69,6 +69,29 @@ namespace MyFirstARGame
                     points = -5;
                     break;
                 }
+                case "snitch":
+                {
+                    points = 150;
+
+                    // end game and compare w/ other players' points to check if won/lost
+                    // var currPName = $"Player {PhotonNetwork.LocalPlayer.ActorNumber}";
+                    // var currScore = networkCommunication.scoreboard.GetScore(currPName);
+                    // bool lost = false;
+
+                    // foreach (var p in PhotonNetwork.PlayerList) {
+                    //     var pName = $"Player {p.ActorNumber}";
+                    //     if (networkCommunication.scoreboard.GetScore(pName) > currScore) {
+                    //         lost = true;
+                    //     }
+                    // }
+
+                    // if (lost) {
+                    //     SceneManager.LoadScene("Game_Over");
+                    // } else {
+                    //     SceneManager.LoadScene("Victory");
+                    // }
+                    break;
+                }
                 default:
                 {
                     return;

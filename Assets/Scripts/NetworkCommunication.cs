@@ -12,7 +12,7 @@ namespace MyFirstARGame
     public class NetworkCommunication : MonoBehaviourPun
     {
         [SerializeField]
-        private Scoreboard scoreboard;
+        public Scoreboard scoreboard;
 
         [SerializeField]
         private TreasureManager treasureManagerPrefab;

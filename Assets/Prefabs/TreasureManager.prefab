@@ -44,11 +44,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8972ef57a32d145bb5043f8cd9346c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plantPrefab: {fileID: 2123881950708857618, guid: 2cfcb1a29e7d4eb46bb3410201aedce8,
+  plantPrefab: {fileID: 4050635174146785144, guid: 2cfcb1a29e7d4eb46bb3410201aedce8,
     type: 3}
   positiveBuffPrefab: {fileID: 5474299653183594858, guid: 497d0091fca95d8418a905c1c3af785d,
     type: 3}
   negativeEffectPrefab: {fileID: 5474299653183594858, guid: b7d6b9a5bdcb97040b7d67a028d07ab6,
+    type: 3}
+  goldenSnitch: {fileID: 4050635174146785144, guid: 74eca96416b4da946a3d6629a95076b5,
     type: 3}
   numPlants: 10
   numPositiveBuffs: 1

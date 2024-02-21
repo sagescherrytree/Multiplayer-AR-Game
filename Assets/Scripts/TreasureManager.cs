@@ -12,7 +12,14 @@ namespace MyFirstARGame
     //[RequireComponent(typeof(Camera))]
     public class TreasureManager : MonoBehaviourPunCallbacks
     {
-        [SerializeField] public GameObject plantPrefab;
+        [SerializeField]
+        public GameObject plantPrefab;
+        [SerializeField]
+        public GameObject positiveBuffPrefab;
+        [SerializeField]
+        public GameObject negativeEffectPrefab;
+        [SerializeField]
+        public GameObject goldenSnitch;
 
         [SerializeField] public GameObject positiveBuffPrefab;
 
@@ -68,7 +75,18 @@ namespace MyFirstARGame
                 {
                     Spawn("NegativePenalty");
                 }
-
+                
+                // golden snitch
+                if (Random.Range(0f, 1f) < 0.2) {
+                    Vector3 spawnPoint = new(Random.Range(-5f, 5f), 1, Random.Range(-5f,5f));
+                    PhotonNetwork.Instantiate("Snitch", spawnPoint, Quaternion.identity, data: new object[] { });
+                }
+                
+                // golden snitch
+                if (Random.Range(0f, 1f) < 0.2) {
+                    Vector3 spawnPoint = new(Random.Range(-5f, 5f), 1, Random.Range(-5f,5f));
+                    PhotonNetwork.Instantiate("Snitch", spawnPoint, Quaternion.identity, data: new object[] { });
+                }
                 yield return new WaitForSeconds(spawnRate);
             }
         }
