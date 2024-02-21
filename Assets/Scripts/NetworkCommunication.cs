@@ -1,7 +1,12 @@
+using System.Collections;
+using System.Threading;
+using UnityEngine.Serialization;
+
 namespace MyFirstARGame
 {
     using Photon.Pun;
     using UnityEngine;
+    using UnityEngine.SceneManagement;
 
     /// <summary>
     /// You can use this class to make RPC calls between the clients. It is already spawned on each client with networking capabilities.
@@ -11,24 +16,25 @@ namespace MyFirstARGame
         [SerializeField]
         public Scoreboard scoreboard;
 
-        [SerializeField] private TreasureManager treasureManager;
+        [SerializeField]
+        private TreasureManager treasureManagerPrefab;
+
+        private TreasureManager treasureManagerInstance = null;
+        
         
         // Start is called before the first frame update
         void Start()
         {
             if (PhotonNetwork.IsMasterClient)
             {
-                Instantiate(treasureManager);
+                treasureManagerInstance = Instantiate(treasureManagerPrefab).GetComponent<TreasureManager>();
+            }
+            else
+            {
+                photonView.RPC("Network_StartGame", RpcTarget.MasterClient);
             }
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
-
-        // Increment score function.
         public void ChangeScore(int delta)
         {
             var playerName = $"Player {PhotonNetwork.LocalPlayer.ActorNumber}";
@@ -52,7 +58,7 @@ namespace MyFirstARGame
             this.scoreboard.SetScore(playerName, newScore);
         }
 
-        public void DestroyPhotonView(int viewId)
+        public void DestroyItem(int viewId)
         {
             photonView.RPC("Network_DestroyPhotonView", RpcTarget.MasterClient, viewId);
         }
@@ -60,11 +66,7 @@ namespace MyFirstARGame
         [PunRPC]
         public void Network_DestroyPhotonView(int viewId)
         {
-            var pv = PhotonView.Find(viewId);
-            if (pv != null)
-            {
-                PhotonNetwork.Destroy(pv);
-            }
+            treasureManagerInstance.DestroyItem(viewId);
         }
 
         public void DebugMessage(string s)
@@ -77,7 +79,25 @@ namespace MyFirstARGame
         {
             Debug.Log($"Debug Message: {s}");
         }
+
+        public void EndGame(int winner)
+        {
+            photonView.RPC("Network_EndGame", RpcTarget.All, winner);
+        }
+
+        [PunRPC]
+        private void Network_EndGame(int winner)
+        {
+            SceneManager.LoadScene(winner == PhotonNetwork.LocalPlayer.ActorNumber ? "Victory" : "Game_Over");
+        }
+
+        [PunRPC]
+        private void Network_StartGame()
+        {
+            treasureManagerInstance.StartGame();
+        }
         
+        [PunRPC]
         public void UpdateForNewPlayer(Photon.Realtime.Player player)
         {
             // Send current player scores to new player.

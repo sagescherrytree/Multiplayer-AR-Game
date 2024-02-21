@@ -20,6 +20,10 @@ namespace MyFirstARGame
         [SerializeField]
         public int maxScore = 10;
 
+        // For particle effects!
+        [SerializeField]
+        public GameObject particleEffectPrefab;
+
         private ARRaycastManager m_RaycastManager;
         private bool pressed;
 
@@ -47,6 +51,7 @@ namespace MyFirstARGame
             if (!Physics.Raycast(ray, out hitData, 1000)) return;
             
             selectedObject = hitData.transform.gameObject;
+
             var networkCommunication = FindObjectOfType<NetworkCommunication>();
             
             networkCommunication.DebugMessage($"Hit a {selectedObject.tag}");
@@ -72,24 +77,6 @@ namespace MyFirstARGame
                 case "snitch":
                 {
                     points = 150;
-
-                    // end game and compare w/ other players' points to check if won/lost
-                    // var currPName = $"Player {PhotonNetwork.LocalPlayer.ActorNumber}";
-                    // var currScore = networkCommunication.scoreboard.GetScore(currPName);
-                    // bool lost = false;
-
-                    // foreach (var p in PhotonNetwork.PlayerList) {
-                    //     var pName = $"Player {p.ActorNumber}";
-                    //     if (networkCommunication.scoreboard.GetScore(pName) > currScore) {
-                    //         lost = true;
-                    //     }
-                    // }
-
-                    // if (lost) {
-                    //     SceneManager.LoadScene("Game_Over");
-                    // } else {
-                    //     SceneManager.LoadScene("Victory");
-                    // }
                     break;
                 }
                 default:
@@ -97,17 +84,16 @@ namespace MyFirstARGame
                     return;
                 }
             }
-            
-            networkCommunication.DestroyPhotonView(selectedObject.GetComponent<PhotonView>().ViewID);
+            // Spawn partcles.
+            //PhotonNetwork.Instantiate(particleEffectPrefab.name, hitData.point, Quaternion.identity);
+
+            networkCommunication.DestroyItem(selectedObject.GetComponent<PhotonView>().ViewID);
             networkCommunication.ChangeScore(points);
             
             if (networkCommunication.GetCurrentScore() >= maxScore)
             {
-                // Go to game over scene.
-                // Need to add logic to go to victory screen for the current player.
+                networkCommunication.EndGame(PhotonNetwork.LocalPlayer.ActorNumber);
                 SceneManager.LoadScene("Victory");
-                // Else if other players interrupted.
-                //SceneManager.LoadScene("Game_Over");
             }
         }
     }

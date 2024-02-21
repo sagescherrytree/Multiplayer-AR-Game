@@ -1,7 +1,11 @@
+using Photon.Realtime;
+
 namespace MyFirstARGame
 {
     using Photon.Pun;
     using UnityEngine;
+    using UnityEngine.SceneManagement;
+    using static UnityEngine.GraphicsBuffer;
 
     /// <summary>
     /// Enables basic network functionality by connecting to the Photon server.
@@ -58,7 +62,14 @@ namespace MyFirstARGame
         private void Start()
         {
             // Try to connect to the master server.
-            PhotonNetwork.ConnectUsingSettings();
+            if (PhotonNetwork.InRoom)
+            {
+                this.OnJoinedRoom();
+            }
+            else
+            {
+                PhotonNetwork.ConnectUsingSettings();
+            }
         }
 
         private void OnGUI()
@@ -66,8 +77,9 @@ namespace MyFirstARGame
             // Creating a simple GUI on the phone screen to we can debug the connection.
             GUIStyle style = new()
             {
-                fontSize = 30
+                fontSize = 30,
             };
+            style.normal.textColor = Color.red;
 
             if (this.isJoinedToRoom)
             {
@@ -76,6 +88,23 @@ namespace MyFirstARGame
             else
             {
                 GUI.Label(new Rect(0, Screen.height / 2 + 300, 100, 100), "Not joined to room", style);
+            }
+            if (PhotonNetwork.InRoom)
+            {
+                GUI.Label(new Rect(0, Screen.height / 2 + 350, 100, 100), PhotonNetwork.CurrentRoom.Name, style);
+            }
+        }
+
+        private void Update()
+        {
+            if(Input.GetKeyDown(KeyCode.A))
+            {
+                WinLossUI winLossManager = GameObject.FindObjectOfType<WinLossUI>();
+                winLossManager.showText(true);
+                Debug.Log("Kill game.");
+
+                SceneManager.MoveGameObjectToScene(this.gameObject, SceneManager.GetActiveScene());
+                SceneManager.LoadScene("Menu");
             }
         }
 
@@ -109,9 +138,15 @@ namespace MyFirstARGame
             this.isJoinedToRoom = false;
         }
 
+        public override void OnDisconnected(DisconnectCause cause)
+        {
+            this.isJoinedToRoom = false;
+        }
+
         public override void OnPlayerEnteredRoom(Photon.Realtime.Player newPlayer)
         {
             this.NetworkCommunication.UpdateForNewPlayer(newPlayer);
         }
+        
     }
 }
