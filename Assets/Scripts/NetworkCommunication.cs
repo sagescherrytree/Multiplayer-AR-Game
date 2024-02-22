@@ -25,7 +25,7 @@ namespace MyFirstARGame
         public GameObject endGame;
 
         [SerializeField]
-        private int numPlayers;
+        private int numPlayers = -1;
         
         
         // Start is called before the first frame update
@@ -126,6 +126,7 @@ namespace MyFirstARGame
                 treasureManagerInstance.Stop();
             }
             endGame.SetActive(true);
+            endGame.GetComponent<ResetUI>().SetText(winner == PhotonNetwork.LocalPlayer.ActorNumber);
             // WinLossUI winLossManager = GameObject.FindObjectOfType<WinLossUI>();
             // winLossManager.showText(winner == PhotonNetwork.LocalPlayer.ActorNumber);
         }
